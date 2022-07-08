@@ -1094,7 +1094,7 @@ ul {
 }
 .main-menu-area {
   /*! float: right; */
-  margin-top: 41px;
+  /* margin-top: 41px; */
 }
 .main-menu-area nav ul {
   margin-top: 7px;
@@ -1622,7 +1622,7 @@ line-height: 0;
   background: rgba(255, 255, 255);
   border-bottom: 2px solid #e7272d;
   position: fixed;
-  padding: 0px 0 0 0;
+  /* padding: 0px 0 0 0; */
 }
 /*-------------------------------------
 2.4 Header 3 Area Styles 
@@ -7097,7 +7097,7 @@ color: #81e9e6;
 	
 #stickytypeheader {
   position: fixed;
-  top: 77px;
+  top: 83px;
   text-align: center;
   z-index: 99999999;
   width: 100%;
@@ -7163,7 +7163,7 @@ color: #81e9e6;
   }
   #stickytypeheader {
   
-  top: 153px;
+  top: 83px;
   text-align: center;
   z-index: 99999999;
   width: 100%;
@@ -7191,7 +7191,7 @@ border-bottom-left-radius: 21px;
   }
     #stickytypeheader {
   
-  top: 153px;
+      top: 83px;
   text-align: center;
   z-index: 99999999;
   width: 100%;
@@ -7266,7 +7266,7 @@ border-bottom-left-radius: 21px;
   }
     #stickytypeheader {
   
-  top: 153px;
+      top: 83px;
   text-align: center;
   z-index: 99999999;
   width: 100%;

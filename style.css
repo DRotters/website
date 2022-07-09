@@ -7099,7 +7099,7 @@ color: #81e9e6;
   position: fixed;
   top: 153px;
   text-align: center;
-  z-index: 99999999;
+  z-index: 888;
   width: 100%;
 }
 .searchbarbox ul li{

@@ -90,10 +90,10 @@
                                             <div class="cart-area">
                                                 <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
                                                 <ul>
-                                                    <li>
+                                                <li type="button" data-toggle="modal" data-target="#exampleModalLong">
                                                         <a><i class="fa fa-sign-in"></i> Sign In</a>
                                                     </li>
-                                                    <li>
+                                                <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
                                                         <a><i class="fa fa-sign-out"></i> Sign Up</a>
                                                     </li>
                                                     
@@ -732,8 +732,84 @@
             </footer>
             <!-- Footer Area End Here -->
         </div>
-        <!-- Style Switch Start Here -->
-        
+
+    <!-- POPUP SIGNIN -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label>Username </label>
+                            <input type="text" placeholder="username" class="form-control" id="txtUserName">
+                        </div>
+                        <div class="form-group">
+                            <label>Password </label>
+                            <input type="password" placeholder="Password" class="form-control" id="txtPassword">
+                        </div>
+                        <div class="btn btn-primary loginbtn" id="btnLogin" onclick="location.href='content.html';">Login</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="form-group col-md-6">
+                            <label>First Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="First Name" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Last Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Last Name" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Mobile Number <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Mobile Number" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Email <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Email" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Address Line 1 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Address Line 1" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Address Line 2 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Address Line 2" required class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Pincode <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                            <input type="text" placeholder="Pincode" required class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="btn btn-primary loginbtn" data-dismiss="modal">Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Style Switch End Here -->
         <!-- Preloader Start Here -->
        <!--  <div id="preloader"></div> -->
@@ -790,7 +866,8 @@
                 if( $(window).scrollTop() > stickyHeaderTop ) {
                         $('#stickytypeheader').css({position: 'fixed', top: '0px', z-index: '9', width: '88%'});
                         $('#sticky').css('display', 'block');
-                } else {
+                } 
+                else {
                         $('#stickytypeheader').css({position: 'static', top: '0px'});
                         $('#sticky').css('display', 'none');
                 }
@@ -798,6 +875,14 @@
   });
 	</script>
 <style>
+#exampleModalLong {
+	z-index: 9999;
+}
+
+#exampleModalLong1 {
+	z-index: 9999;
+}
+
 .experience h4 {
   color: #fff;
 }
@@ -1013,6 +1098,16 @@ color: #646262;
 
 .slick-center:after {
   opacity: 0;
+}
+
+.form-group {
+  padding: 9px;
+}
+.form-contraol {
+  width: 100%;
+  height: 37px;
+  border-radius: 0px;
+  border: 1px solid #a4a3a3;
 }
  
 </style>

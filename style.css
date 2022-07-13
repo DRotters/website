@@ -6625,7 +6625,7 @@ ul {
 18. Special Dish Styles
 =======================================*/
 .special-dish-area {
-  padding: 34px 0 70px;
+  padding: 34px 0 34px;
   /* background: url(img/special-dishes-back.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -8969,6 +8969,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   max-width: 758px;
+  display: none;
 }
 
 
@@ -9252,4 +9253,74 @@ ul {
   font-size: 27px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.wrapper {
+  display: block;
+}
+
+#sidebar {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background: #f8f8f8;
+  border: 1px solid;
+}
+.media-object{
+  max-width: 250px;
+}
+.sidebar-header{
+  background:#333333;
+  color: white;
+  padding: 0px 10px;
+}
+.sidebar-content{
+  padding: 10px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 998;
+  /* animate the transition */
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+.btn-sidebar{
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 10;
+  border: 1px solid;
+  box-shadow: 1px;
+  background: white;
+}
+.well img{
+  border: 1px solid;
+  padding: 5px;
+  border-color: #646262;
+  margin-right: 5px;
+  border-radius: 5px;
 }

@@ -762,6 +762,187 @@
                 </div>
               </div>
             </div>
+
+
+
+<!--class="open-button"-------SAN-->
+<button  alt="Chat"  class="btn open-button"  onclick="openForm()">
+   <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
+</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="" class="form-container">
+    
+    <!--
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>-->
+    <header class="chatbox-header">
+    <aside style="flex:3">
+      <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
+    </aside>
+    <aside style="flex:8">
+      <h1>Drotter</h1>(Online)
+    </aside>
+    <aside style="flex:1">
+      <button class="chatbox-maximize"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+    </aside>
+  </header>
+
+    <footer class="chatbox-footer">
+      <aside style="flex:10">
+        <textarea type="text" placeholder="Type your message here..." autofocus=""></textarea>
+      </aside>
+      
+      <button  type="submit" style="flex:1;color:rgb(26, 79, 179);text-align:center;">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i> 
+      </button>
+        <!--
+        <aside style="flex:1;color:rgb(168, 8, 8);text-align:center;">
+        </aside><i class="fa fa-close"></i></aside>
+      -->
+    
+    </footer>
+    <!--
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>-->
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  
+    
+  </form>
+</div>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+<style>
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
+   * {box-sizing: border-box;}
+   
+   /*  Button used to open the chat form - fixed at the bottom of the page */
+   .open-button {
+     
+      position: fixed;
+      right: 10px;
+      top: 55%;
+      z-index: 10;
+      border: 1px solid;
+      box-shadow: 1px;
+      background: white;
+
+   }
+   
+   /* The popup chat - hidden by default */
+   .chat-popup {
+   display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  width: 377px;
+  border: 0px solid #f1f1f1;
+  z-index: 9;
+
+    
+
+   }
+   .chatbox-header{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    background-color: #0360a5;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+   }
+
+.chatbox-footer{
+
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 1px;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+   /* Add styles to the form container */
+   .form-container {
+     max-width: 100%;
+    padding: 5px; /**/
+     background-color: rgba(255, 255, 255, 0.99);
+     border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+   }
+   
+   /* Full-width textarea */
+   .form-container textarea {
+     width: 100%;
+     padding: 10px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+     resize: none;
+     min-height: 100px;
+   }
+   
+   /* When the textarea gets focus, do something */
+   .form-container textarea:focus {
+     background-color: #ddd;
+     outline: none;
+   }
+   
+   /* Set a style for the submit/send button */
+   .form-container .btn {
+     background-color: #042eaa;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom:10px;
+     opacity: 0.8;
+   }
+   
+   /* Add a red background color to the cancel button */
+   .form-container .cancel {
+     background-color: rgba(255, 0, 0, 0.586);
+   }
+   
+   /* Add some hover effects to buttons */
+   .form-container .btn:hover, .open-button:hover {
+     opacity: 1;
+   }
+   
+   </style>
+
+
+
+
+<!---------SAN-->
+
+
+
+
+
+
+
+
           </footer>
           <!-- Footer Area End Here -->
         </div>
@@ -812,6 +993,8 @@
         <!-- Custom Js -->
         <script src="js/main.js" type="text/javascript"></script>
 
+        <!--SAN--- ChatBox Js -->
+        <script src="js/ChatBox.js" type="text/javascript"></script>
 </body>
 
 <!-- <script>
@@ -1072,7 +1255,197 @@
     padding: 79px 43px;
     color: #646262;
   }
+
+
+
+/*  -----SAN----*/
+
+
+$primary-color: #0360a5;
+$accent-color: #f6f7f9;
+#fff: #fff;
+$font-color: #888;
+
+@mixin chabox-container {
+  display: flex;
+  position: absolute;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  flex-direction: column;
+}
+
+@mixin chatbox-header {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  background-color: #0360a5;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin chatbox-main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: calc(2 * #{16px}) #{16px};
+  line-height: calc(#{16px} + #{16px} / 2);
+  color: $font-color;
+  text-align: center;
+}
+
+@mixin chatbox-footer {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin chatbox-floating-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  color: #fff;
+  background-color: #0360a5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #f6f7f9;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  outline: 0 !important;
+  cursor: pointer;
+
+  &.chatbox-open {
+    @include chatbox-floating-button;
+    margin: 16px;
+  }
+
+  &.chatbox-close {
+    @include chatbox-floating-button;
+    display: none;
+    margin: 16px calc(2 * #{16px} + #{52px})
+      16px 16px;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  height: calc({16px} + {16px} / 2);
+  padding: 0 calc(#{16px} / 2);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(#{16px} + #{16px} / 2);
+  color: $font-color;
+  background-color: none;
+  border: 0;
+  outline: 0 !important;
+  resize: none;
+  overflow: hidden;
+
+  &::placeholder {
+    color: $font-color;
+  }
+}
+
+.chatbox-popup {
+  @include chabox-container;
+  display: none;
+  bottom: calc(2 * #{16px} + #{52px});
+  right: 16px;
+  width: 377px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 16px;
+
+  .chatbox-popup__header {
+    @include chatbox-header;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+    .chatbox-popup__avatar {
+      margin-top: -32px;
+      background-color: #0360a5;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+    }
+  }
+
+  .chatbox-popup__main {
+    @include chatbox-main;
+  }
+
+  .chatbox-popup__footer {
+    @include chatbox-footer;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}
+
+.chatbox-panel {
+  @include chabox-container;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 377px;
+  background-color: #fff;
+
+  .chatbox-panel__header {
+    @include chatbox-header;
+    flex: 0 0 auto;
+  }
+
+  .chatbox-panel__main {
+    @include chatbox-main;
+    flex: 1 1 auto;
+  }
+
+  .chatbox-panel__footer {
+    @include chatbox-footer;
+    flex: 0 0 auto;
+  }
+}
+
+
+<!---SAN-->
+
+
+
+
+
+
+
+
 </style>
+
+
+
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

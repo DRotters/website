@@ -293,6 +293,13 @@ ul {
   z-index: 1;
 }
 
+.modal-header{
+ display: block!important;	
+}
+
+.modal-header .close {
+    margin-top: -22px!important;
+}
 .title-bar-big-left-close {
   position: relative;
 }
@@ -8956,7 +8963,7 @@ ul {
 
 .loginbtn {
   display: block;
-  margin: 0px 10px;
+  margin: 0px 0px;
   font-size: 20px;
 }
 

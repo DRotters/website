@@ -93,13 +93,12 @@
                     <div class="cart-area">
                       <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
                       <ul>
-                        <li>
-                          <a><i class="fa fa-sign-in"></i> Sign In</a>
-                        </li>
-                        <li>
-                          <a><i class="fa fa-sign-out"></i> Sign Up</a>
-                        </li>
-
+                         <li type="button" data-toggle="modal" data-target="#exampleModalLong">
+                                                        <a><i class="fa fa-sign-in"></i> Sign In</a>
+                                                    </li>
+                                                <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
+                                                        <a><i class="fa fa-sign-out"></i> Sign Up</a>
+                                                    </li>
                       </ul>
                     </div>
                   </li>
@@ -366,404 +365,492 @@
         <h4 class="text-center">Things you may be interested</h4>
         <br>
         <div class="row">
-          <div class="col-3">
-            <div class="card">
-              <img class="card-img-top" src="img/things/things1.png" alt="Card image" style="max-width:400px">
-              <div class="card-body">
-                <p class="card-text">The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool</p>
-                <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card">
-                <img class="card-img-top" src="img/things/mountain.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/things/things1.png" alt="Card image" style="max-width:400px">
+                    <div class="card-body">
+                        <p class="card-text">The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool</p>
+                        <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card">
-                <img class="card-img-top" src="img/things/hotair.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer
-                  </p>
-                  <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card">
+                        <img class="card-img-top" src="img/things/mountain.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                            <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card">
-                <img class="card-img-top" src="img/things/boat.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <p class="card-text">The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool
-                  </p>
-                  <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card">
+                        <img class="card-img-top" src="img/things/hotair.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some example text some example text. John Doe is an architect and engineer
+                            </p>
+                            <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="table-reservation2-area1">
-            <div class="container">
-              <div class="boxsection">
-                <h4 style="text-align:center;">Experiences Near You</h4>
-                <p style="text-align:center;">24 Experiences for you</p>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card">
+                        <img class="card-img-top" src="img/things/boat.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <p class="card-text">
+                                The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool
+                            </p>
+                            <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-reservation2-area1">
+                <div class="container">
+                    <div class="boxsection">
+                        <h4 style="text-align:center;">Experiences Near You</h4>
+                        <p style="text-align:center;">24 Experiences for you</p>
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/exp_near/white_heaven.jpg"></img>
+                                    </div>
+                                </div>
+                                <div class="boxtext">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                                    <p><a href="experience_detail.html">Whitsunday islands off northern Queensland</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/exp_near/great_reef.jpg"></img>
+                                    </div>
+                                    <div class="boxtext">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <p><a href="experience_detail.html">Explore the Natural Beauty of The Great Barrier Reef</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/experience/1_3.png"></img>
+                                    </div>
+                                    <div class="boxtext">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <p><a href="experience_detail.html">Drawn from a within with a New York Artist</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/experience/1_1.png"></img>
+                                    </div>
+                                </div>
+                                <div class="boxtext">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                                    <p><a href="experience_detail.html">Orgami and esscence of japan</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/experience/1_2.png"></img>
+                                    </div>
+                                    <div class="boxtext">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <p><a href="experience_detail.html">Meet and draw a llama</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="box pad0">
+                                    <div class="img">
+                                        <img src="img/experience/1_3.png"></img>
+                                    </div>
+                                    <div class="boxtext">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <p><a href="experience_detail.html">Drawn from a within with a New York Artist</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="img/learnmorebtn.png" class="learnbtn"><img>
+                    </div>
+                </div>
+            </div>
+            <!-- Client Reviews Area End Here -->
+            <div class="special-dish-area1">
+                <div class="container-fluid pad0">
+                    <h4 style="text-align:center;">About Experiences</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img src="img/map1.png"></img>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p class="expabtp">
+                                If you travel, you can experience things that you could never experience at
+                                home. You may see beautiful places and landscapes that do not exist where you live. You may
+                                meet people that will change your life, and your thinking. You may try activities that you
+                                have never tried before <br> Travelling will inevitably make you more independent and
+                                confident. You will realize that you can cope with a lot of unexpected situations. You will
+                                realize that you can survive without all that help that is always available for you at home.
+                                You will likely find out that you are much stronger and braver than you have expected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/exp_near/white_heaven.jpg"></img>
-                      </div>
-                    </div>
-                    <div class="boxtext">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                      <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                      <p><a href="experience_detail.html">Whitsunday islands off northern Queensland</a></p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/exp_near/great_reef.jpg"></img>
-                      </div>
-                      <div class="boxtext">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <p><a href="experience_detail.html">Explore the Natural Beauty of The Great Barrier Reef</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/experience/1_3.png"></img>
-                      </div>
-                      <div class="boxtext">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <p><a href="experience_detail.html">Drawn from a within with a New York Artist</a></p>
-                      </div>
-                    </div>
-                  </div>
+                    <img src="img/logo.png" class="learnbtn"><img>
                 </div>
-                <div class="row">
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/experience/1_1.png"></img>
-                      </div>
-                    </div>
-                    <div class="boxtext">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                      <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                      <p><a href="experience_detail.html">Orgami and esscence of japan</a></p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/experience/1_2.png"></img>
-                      </div>
-                      <div class="boxtext">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <p><a href="experience_detail.html">Meet and draw a llama</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <div class="box pad0">
-                      <div class="img">
-                        <img src="img/experience/1_3.png"></img>
-                      </div>
-                      <div class="boxtext">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <p><a href="experience_detail.html">Drawn from a within with a New York Artist</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <img src="img/learnmorebtn.png" class="learnbtn"><img>
-              </div>
             </div>
-          </div>
-          <!-- Client Reviews Area End Here -->
-          <div class="special-dish-area1">
-            <div class="container-fluid pad0">
-              <h4 style="text-align:center;">About Experiences</h4>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <img src="img/map1.png"></img>
+
+            <!-- POPUP SIGNIN -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"  >
+                            <h4 class="modal-title" id="exampleModalLongTitle">Sign In</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="form-group">
+                                    <label>Username </label>
+                                    <input type="text" placeholder="username" class="form-control" id="txtUserName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password </label>
+                                    <input type="password" placeholder="Password" class="form-control" id="txtPassword">
+                                </div>
+                                <div class="btn btn-primary loginbtn" id="btnLogin" onclick="location.href='content.html';">Login</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <p class="expabtp">If you travel, you can experience things that you could never experience at
-                    home. You may see beautiful places and landscapes that do not exist where you live. You may
-                    meet people that will change your life, and your thinking. You may try activities that you
-                    have never tried before <br> Travelling will inevitably make you more independent and
-                    confident. You will realize that you can cope with a lot of unexpected situations. You will
-                    realize that you can survive without all that help that is always available for you at home.
-                    You will likely find out that you are much stronger and braver than you have expected.</p>
-                </div>
-              </div>
             </div>
-            <div class="row">
-              <img src="img/logo.png" class="learnbtn"><img>
-            </div>
-          </div>
-          <!-- side bar -->
-          <div class="wrapper">
-            <!-- Sidebar -->
-            <div class="overlay">
-              <nav id="sidebar">
 
-                <div id="dismiss">
-                  <i class="fas fa-arrow-right"></i>
+
+            <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"  >
+                            <h4 class="modal-title" id="exampleModalLongTitle">Sign Up</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="form-group col-md-6">
+                                    <label>First Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="First Name" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Last Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Last Name" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Mobile Number <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Mobile Number" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Email <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Email" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Address Line 1 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Address Line 1" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Address Line 2 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Address Line 2" required class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Pincode <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                                    <input type="text" placeholder="Pincode" required class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="btn btn-primary loginbtn" data-dismiss="modal">Sign Up</div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="sidebar-header">
-                  <h3>Blogs and News</h3>
-                </div>
-                <div class="sidebar-content">
-                  <div class="well">
-                    <div class="media">
-                      <a class="pull-left" href="#">
-                        <img class="media-object" src="img/sidebar/cofee.png">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading">2-3 cups of coffee a day may reduce kidney injury risk by 23%</h5>
-
-                        <p>Knowing more about how coffee consumption affects the incidence of other kidney-related
-                          conditions could help policymakers take steps to reduce people’s risk of developing
-                          progressive kidney disease.</p>
-                        <ul class="list-inline list-unstyled">
-                          <li><span><i class="glyphicon glyphicon-user"></i> by Rozer Flims </span></li>
-                          <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-                          <li>|</li>
-                          <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
-                          <li>|</li>
-                          <li>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                          </li>
-                          <li>|</li>
-                          <li>
-                            <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                            <span><i class="fa fa-facebook-square"></i></span>
-                            <span><i class="fa fa-twitter-square"></i></span>
-                            <span><i class="fa fa-google-plus-square"></i></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="well">
-                    <div class="media">
-                      <a class="pull-left" href="#">
-                        <img class="media-object" src="img/sidebar/covid.jpg">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading float-left">Long COVID: Disrupted sleep, fatigue common months after
-                          infection</h5>
-                        <p>According to the research, nearly half of those who recovered from COVID-19 experience at
-                          least moderate sleep issues.<br />
-                          The research was presented in June at Sleep 2022, a meeting of the Associated Professional
-                          Sleep Societies, a joint venture of the American Academy of Sleep Medicine (AASM) and the
-                          Sleep Research Society (SRS).</p>
-                        <ul class="list-inline list-unstyled">
-                          <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
-                          <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-                          <li>|</li>
-                          <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
-                          <li>|</li>
-                          <li>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                          </li>
-                          <li>|</li>
-                          <li>
-                            <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                            <span><i class="fa fa-facebook-square"></i></span>
-                            <span><i class="fa fa-twitter-square"></i></span>
-                            <span><i class="fa fa-google-plus-square"></i></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="well">
-                    <div class="media">
-                      <a class="pull-left" href="#">
-                        <img class="media-object" src="img/sidebar/vaccine.png">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading float-left">Pfizer and BioNTech to test universal COVID-19 vaccine candidate</h5>
-                        <p>To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine. To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine.</p>
-                        <ul class="list-inline list-unstyled">
-                          <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
-                          <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
-                          <li>|</li>
-                          <span><i class="glyphicon glyphicon-comment"></i> 0 comments</span>
-                          <li>|</li>
-                          <li>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                          </li>
-                          <li>|</li>
-                          <li>
-                            <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                            <span><i class="fa fa-facebook-square"></i></span>
-                            <span><i class="fa fa-twitter-square"></i></span>
-                            <span><i class="fa fa-google-plus-square"></i></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="well">
-                    <div class="media">
-                      <a class="pull-left" href="#">
-                        <img class="media-object" src="img/sidebar/covid-us.jpg">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading float-left">'Don't Panic': U.S. Has Tools to Manage BA.5, White House Says</h5>
-                        <p>The BA.5 Omicron subvariant is dominating now and accounts for 65% – or about two-thirds – of the virus causing COVID-19 in the United States, federal officials said on Tuesday. Although no evidence yet points to BA.5 causing more severe disease, hospitalization numbers are up in the past few months and case numbers are on the rise with this highly transmissible strain of the virus.</p>
-                        <ul class="list-inline list-unstyled">
-                          <li><span><i class="glyphicon glyphicon-user"></i> by Damian McNamara, MA</span></li>
-                          <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
-                          <li>|</li>
-                          <span><i class="glyphicon glyphicon-comment"></i> 5 comments</span>
-                          <li>|</li>
-                          <li>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                          </li>
-                          <li>|</li>
-                          <li>
-                            <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                            <span><i class="fa fa-facebook-square"></i></span>
-                            <span><i class="fa fa-twitter-square"></i></span>
-                            <span><i class="fa fa-google-plus-square"></i></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-
-              <!-- Page Content -->
-
-              <!-- Dark Overlay element -->
             </div>
-            <div id="content">
+            <!-- POPUP SIGNIN -->
 
-              <button type="button" id="sidebarCollapse" class="btn btn-sidebar">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-          </div>
-          <!-- side bar end -->
+            <!-- side bar -->
+            <div class="wrapper">
+                <!-- Sidebar -->
+                <div class="overlay">
+                    <nav id="sidebar">
 
-          <!-- Footer Area Start Here -->
-          <footer>
-            <div class="footer-area-top section-space">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-box">
-                      <h3 class="title-bar-footer">Support</h3>
-                      <ul class="opening-schedule">
-                        <li><a href="">Help center</a></li>
-                        <li><a>Safety information</a></span></li>
-                        <li><a>Our Covid - 19 Response</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-box">
-                      <h3 class="title-bar-footer">Community</h3>
-                      <ul class="opening-schedule">
-                        <li><a>Globedrotter: Diaster relied housing</a></li>
-                        <li><a>Support Afgan refugees</a></li>
-                        <li><a>Combating discrimination</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-box">
-                      <h3 class="title-bar-footer">About</h3>
-                      <ul class="opening-schedule">
-                        <li><a>Newsroom</a></li>
-                        <li><a>Careers</a></li>
-                        <li><a>Investors</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                        <div id="dismiss">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                        <div class="sidebar-header">
+                            <h3>Blogs and News</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <div class="well">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="img/sidebar/cofee.png">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">2-3 cups of coffee a day may reduce kidney injury risk by 23%</h5>
+
+                                        <p>
+                                            Knowing more about how coffee consumption affects the incidence of other kidney-related
+                                            conditions could help policymakers take steps to reduce people’s risk of developing
+                                            progressive kidney disease.
+                                        </p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-user"></i> by Rozer Flims </span></li>
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                                            <li>|</li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                                <span><i class="fa fa-facebook-square"></i></span>
+                                                <span><i class="fa fa-twitter-square"></i></span>
+                                                <span><i class="fa fa-google-plus-square"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="well">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="img/sidebar/covid.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading float-left">
+                                            Long COVID: Disrupted sleep, fatigue common months after
+                                            infection
+                                        </h5>
+                                        <p>
+                                            According to the research, nearly half of those who recovered from COVID-19 experience at
+                                            least moderate sleep issues.<br />
+                                            The research was presented in June at Sleep 2022, a meeting of the Associated Professional
+                                            Sleep Societies, a joint venture of the American Academy of Sleep Medicine (AASM) and the
+                                            Sleep Research Society (SRS).
+                                        </p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                                            <li>|</li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                                <span><i class="fa fa-facebook-square"></i></span>
+                                                <span><i class="fa fa-twitter-square"></i></span>
+                                                <span><i class="fa fa-google-plus-square"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="well">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="img/sidebar/vaccine.png">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading float-left">Pfizer and BioNTech to test universal COVID-19 vaccine candidate</h5>
+                                        <p>To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine. To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine.</p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-comment"></i> 0 comments</span>
+                                            <li>|</li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                                <span><i class="fa fa-facebook-square"></i></span>
+                                                <span><i class="fa fa-twitter-square"></i></span>
+                                                <span><i class="fa fa-google-plus-square"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="well">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="img/sidebar/covid-us.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading float-left">'Don't Panic': U.S. Has Tools to Manage BA.5, White House Says</h5>
+                                        <p>The BA.5 Omicron subvariant is dominating now and accounts for 65% – or about two-thirds – of the virus causing COVID-19 in the United States, federal officials said on Tuesday. Although no evidence yet points to BA.5 causing more severe disease, hospitalization numbers are up in the past few months and case numbers are on the rise with this highly transmissible strain of the virus.</p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-user"></i> by Damian McNamara, MA</span></li>
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-comment"></i> 5 comments</span>
+                                            <li>|</li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                                <span><i class="fa fa-facebook-square"></i></span>
+                                                <span><i class="fa fa-twitter-square"></i></span>
+                                                <span><i class="fa fa-google-plus-square"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Page Content -->
+                    <!-- Dark Overlay element -->
                 </div>
-              </div>
-            </div>
-            <div class="footer-area-bottom">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-9">
-                    <p>&copy; 2022 Globedrotter | Privacy | Terms | Sitemap </p>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="footer-box">
-                      <ul class="footer-social">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div id="content">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-sidebar">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
                 </div>
-              </div>
             </div>
-          </footer>
-          <!-- Footer Area End Here -->
+            <!-- side bar end -->
+            <!-- Footer Area Start Here -->
+            <footer>
+                <div class="footer-area-top section-space">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="footer-box">
+                                    <h3 class="title-bar-footer">Support</h3>
+                                    <ul class="opening-schedule">
+                                        <li><a href="">Help center</a></li>
+                                        <li><a>Safety information</a></span></li>
+                                        <li><a>Our Covid - 19 Response</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="footer-box">
+                                    <h3 class="title-bar-footer">Community</h3>
+                                    <ul class="opening-schedule">
+                                        <li><a>Globedrotter: Diaster relied housing</a></li>
+                                        <li><a>Support Afgan refugees</a></li>
+                                        <li><a>Combating discrimination</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="footer-box">
+                                    <h3 class="title-bar-footer">About</h3>
+                                    <ul class="opening-schedule">
+                                        <li><a>Newsroom</a></li>
+                                        <li><a>Careers</a></li>
+                                        <li><a>Investors</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-area-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <p>&copy; 2022 Globedrotter | Privacy | Terms | Sitemap </p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-box">
+                                    <ul class="footer-social">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Area End Here -->
         </div>
         <!-- Style Switch Start Here -->
 
@@ -772,6 +859,8 @@
         <!--  <div id="preloader"></div> -->
         <!-- Preloader End Here -->
         <!-- jquery-->
+
+
         <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
 
         <!-- Plugins js -->
@@ -844,6 +933,24 @@
   });
 </script>
 <style>
+#exampleModalLong {
+	z-index: 9999;
+	background: #8080807d;
+}
+
+#exampleModalLong1 {
+	z-index: 9999;
+	background: #8080807d;
+}
+.modal-open .modal{
+	opacity: 1 !important;
+	padding-top: 36px;
+  }
+
+.experience h4 {
+  color: #fff;
+}
+
   .experience {
     /* margin-top: 5%; */
     width: 100%;

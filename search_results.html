@@ -83,8 +83,19 @@
                       <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i>
                           DRotters</a></li>
                       <li><a href="academic.html"><i class="fa fa-book"></i> Academic</a></li>
+                      <li><a href="events.html"><i class="fa fa-book"></i> Events</a></li>
                     </ul>
                   </nav>
+                  <div class="p-1 bg-light rounded rounded-pill border border-secondary shadow-sm mb-4 mt-2">
+                    <div class="input-group">
+                      <input type="search" placeholder="Type to search experiences, DRotters etc."
+                        class="form-control border-0 bg-light shadow-none m-1">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" onclick="window.location.href='search_results.html'"
+                          class="btn btn-link text-secondary m-1 shadow-none"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -93,19 +104,19 @@
                     <div class="cart-area">
                       <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
                       <ul>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong">
                           <a><i class="fa fa-sign-in"></i> Sign In</a>
                         </li>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
                           <a><i class="fa fa-sign-out"></i> Sign Up</a>
                         </li>
-
                       </ul>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -131,10 +142,12 @@
       </div>
       <!-- Mobile Menu Area End -->
     </header>
+    <!-- Header Area End Here -->
+    <!-- Slider 1 Area Start Here -->
     <!-- Search Results start -->
     <div class="container">
       <div class="row">
-        <div class="col-2 filter-area p-1">
+        <div class="col-2 filter-area p-4">
           <h4>Filter by</h4>
           <hr>
           <div class="form-check">
@@ -152,7 +165,7 @@
             <label class="form-check-label" for="flexCheckChecked">Academic (68)</label>
           </div>
         </div>
-        <div class="col-10">
+        <div class="col-10 result-area p-4">
           <div class="d-flex justify-content-between">
             <h4>168 Results Found</h4>
             <div class="map-trigger">
@@ -162,6 +175,7 @@
               <span><a href="#" title="Show on map"><i class="glyphicon glyphicon glyphicon-th"></i></a></span>
             </div>
           </div>
+          <hr class="mt-0">
           <div class="row search-result">
             <!-- the cols in this div change the number of cards per row depending on screen size and the mb-4 adds space below cards if they spill over into the next row-->
             <div class="col-12 col-md-6 col-lg-4 mb-4">
@@ -175,7 +189,36 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                      </span></li>
+                    <li>|</li>
+                    <li>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                      <a  href="experience_detail.html" title="Click to see the details">Details >></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card-default box-shadow-light">
+                <img class="card-img-top"
+                  src="https://res.cloudinary.com/sepuckett86/image/upload/v1513176680/IMG_5837_xicdt5.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+                <div class="card-footer">
+                  <ul class="list-inline list-unstyled">
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -204,66 +247,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
-                      </span></li>
-                    <li>|</li>
-                    <li>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star-empty"></span>
-                    </li>
-                    <li>|</li>
-                    <li>
-                      <a href="#" title="Click to see the details">Details >></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card-default box-shadow-light">
-                <img class="card-img-top"
-                  src="https://res.cloudinary.com/sepuckett86/image/upload/v1513176680/IMG_5837_xicdt5.jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-                <div class="card-footer">
-                  <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
-                      </span></li>
-                    <li>|</li>
-                    <li>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star-empty"></span>
-                    </li>
-                    <li>|</li>
-                    <li>
-                      <a href="#" title="Click to see the details">Details >></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card-default box-shadow-light">
-                <img class="card-img-top"
-                  src="https://res.cloudinary.com/sepuckett86/image/upload/v1513176680/IMG_5837_xicdt5.jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-                <div class="card-footer">
-                  <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -293,7 +277,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -323,7 +307,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -353,7 +337,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -383,7 +367,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -413,7 +397,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -443,7 +427,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -473,7 +457,7 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -503,7 +487,37 @@
                 </div>
                 <div class="card-footer">
                   <ul class="list-inline list-unstyled">
-                    <li><span><a href="#" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
+                      </span></li>
+                    <li>|</li>
+                    <li>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                      <a href="#" title="Click to see the details">Details >></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card-default box-shadow-light">
+                <img class="card-img-top"
+                  src="https://res.cloudinary.com/sepuckett86/image/upload/v1513176680/IMG_5837_xicdt5.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+                <div class="card-footer">
+                  <ul class="list-inline list-unstyled">
+                    <li><span><a href="experience_detail.html" title="Show on map"><i class="glyphicon glyphicon-map-marker"></i></a> Alasca
                       </span></li>
                     <li>|</li>
                     <li>
@@ -526,34 +540,17 @@
           <div class="row">
             <div id="map" style="height:500px;"></div>
           </div>
+          <div class="row">
+            <button class="btn btn-outline-primary">Show more</button>
+          </div>
+          <div class="row">&nbsp;</div>
         </div>
 
       </div>
     </div>
     <!-- Search results end -->
 
-    <div class="special-dish-area1">
-      <div class="container-fluid pad0">
-        <h4 style="text-align:center;">About Experiences</h4>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="img/map1.png"></img>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <p class="expabtp">If you travel, you can experience things that you could never experience at
-              home. You may see beautiful places and landscapes that do not exist where you live. You may
-              meet people that will change your life, and your thinking. You may try activities that you
-              have never tried before <br> Travelling will inevitably make you more independent and
-              confident. You will realize that you can cope with a lot of unexpected situations. You will
-              realize that you can survive without all that help that is always available for you at home.
-              You will likely find out that you are much stronger and braver than you have expected.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <img src="img/logo.png" class="learnbtn"><img>
-      </div>
-    </div>
+    
     <!-- side bar -->
     <div class="wrapper">
       <!-- Sidebar -->

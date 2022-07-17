@@ -151,7 +151,7 @@
           <img src="img/slider/globeDRoterTheme.jpg" alt="slider" title="#slider-direction-3" />
           <img src="img/slider/northen_lights.jpg" alt="slider" title="#slider-direction-1" />
           <img src="img/slider/homebanner3.jpg" alt="slider" title="#slider-direction-2" />
-          <img src="img/slider/tirumala-pti-1640594654.jpg" alt="slider" title="#slider-direction-2" />
+          <img src="img/slider/india-culture-holy-tradition.jpg" alt="slider" title="#slider-direction-2" />
           <img src="img/slider/9.jpg" alt="slider" title="#slider-direction-3" />
           <img src="img/slider/banner_the_hide_game_drive_-_callum_gerrish.jpg" alt="slider"
             title="#slider-direction-4" />
@@ -366,7 +366,6 @@
                   <div class="item">
                     <img src="img/experience/1.png" alt="">
                   </div>
-
                 </div>
               </div>
             </div> <!-- end div experience -->
@@ -374,7 +373,6 @@
         </div> <!-- end container experience -->
       </div>
     </div>
-
     <div class="container">
       <div class="exp-card">
         <h4 class="text-center">Things you may be interested</h4>
@@ -587,12 +585,9 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
-
-
           <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -882,7 +877,34 @@
         </div>
       </div>
     </div>
+    <!-- ChatBox Code-->
 
+    <!--class="open-button"-------SAN-->
+    <button alt="Chat" class="btn open-button" onclick="openForm()">
+      <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
+    </button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="" class="form-container">
+        <header class="chatbox-header">
+          <aside style="flex:3">
+            <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
+          </aside>
+          <aside style="flex:8">
+            <h3>DRotter Help! </h3>
+          </aside>
+        </header>
+        <footer class="chatbox-footer">
+          <aside style="flex:10">
+            <textarea type="text" placeholder="Type your message here..." autofocus=""></textarea>
+          </aside>
+          <button type="submit" style="flex:1;color:rgb(26, 79, 179);text-align:center;">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </footer>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
     <!-- Style Switch Start Here -->
 
     <!-- Style Switch End Here -->
@@ -934,6 +956,14 @@
   </div>
 </body>
 <script type="text/javascript">
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
   $(document).ready(function () {
 
     $('#dismiss, .overlay').on('click', function () {

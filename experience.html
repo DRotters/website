@@ -20,12 +20,11 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Animate CSS -->
   <link rel="stylesheet" href="css/animate.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
-    rel="stylesheet">
+  <link    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"    rel="stylesheet">
 
   <!-- Font-awesome CSS-->
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -75,13 +74,26 @@
                 <div class="main-menu-area">
                   <nav>
                     <ul>
-                      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                      <li class="active"><a href="experience.html"><i class="fa fa-hourglass-end"></i> Experience</a>
+                      <li><a href="index.html"><i class="fa fa-home"></i> Home</a>
                       </li>
-                      <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i> DRotters</a></li>
+                      <li class="active"><a href="experience.html"><i class="fa fa-hourglass-end"></i>
+                          Experience</a></li>
+                      <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i>
+                          DRotters</a></li>
                       <li><a href="academic.html"><i class="fa fa-book"></i> Academic</a></li>
+                      <li><a href="events.html"><i class="fa fa-book"></i> Events</a></li>
                     </ul>
                   </nav>
+                  <div class="p-1 bg-light rounded rounded-pill border border-secondary shadow-sm mb-4 mt-2">
+                    <div class="input-group">
+                      <input type="search" placeholder="Type to search experiences, DRotters etc."
+                        class="form-control border-0 bg-light shadow-none m-1">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" onclick="window.location.href='search_results.html'"
+                          class="btn btn-link text-secondary m-1 shadow-none"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -90,19 +102,19 @@
                     <div class="cart-area">
                       <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
                       <ul>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong">
                           <a><i class="fa fa-sign-in"></i> Sign In</a>
                         </li>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
                           <a><i class="fa fa-sign-out"></i> Sign Up</a>
                         </li>
-
                       </ul>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -116,7 +128,8 @@
                   <ul>
                     <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="#"><i class="fa fa-hourglass-end"></i> Experience</a></li>
-                    <li><a href="#"> <i class="fa fa-medkit" aria-hidden="true"></i> DRotters</a></li>
+                    <li><a href="#"> <i class="fa fa-medkit" aria-hidden="true"></i> DRotters</a>
+                    </li>
                     <li><a href="#"><i class="fa fa-book"></i> Academic</a></li>
                   </ul>
                 </nav>
@@ -546,10 +559,6 @@
         </div>
       </div>
     </div>
-
-
-
-
     <div class="table-reservation2-area1">
       <div class="container">
         <div class="boxsection">
@@ -788,237 +797,7 @@
   <script src="js/main.js" type="text/javascript"></script>
 
 </body>
-<style>
-  .experience h4 {
-    color: #fff;
-  }
 
-  .experience {
-    /* margin-top: 5%; */
-    width: 100%;
-    background-color: #fff;
-    height: auto;
-    < !-- background: -webkit-radial-gradient(center, ellipse cover, rgba(232, 255, 168, 1) 0%, rgba(0, 163, 163, 0.35) 100%), url(http://2.1m.yt/tPpsnnE.jpg) no-repeat top center scroll;
-    -->-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-
-  #slider-experience {
-    /* padding-top: 30px; */
-    padding-bottom: 30px;
-  }
-
-  img.work {
-    width: 50%;
-    margin-bottom: 25px;
-  }
-
-  .experience date {
-    font-style: italic;
-    font-size: 17px;
-  }
-
-  .experience h5 {
-    color: #008080;
-    font-size: 27px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-
-  .carousel-caption {
-    position: static;
-    /*/ this is to replace the images of bootstrap slider /*/
-    margin-top: 5%;
-    font-size: 22px;
-    color: #333;
-    min-height: 470px;
-  }
-
-  .carousel-control.left,
-  .carousel-control.right {
-    background: none;
-  }
-
-  .table-reservation2-area1 .box {
-    box-shadow: 0px 0px 0px transparent;
-  }
-
-  .table-reservation2-area1 .box img {
-    border-radius: 36px;
-  }
-
-  .boxtext {
-    text-align: left !important;
-    margin-left: 0px;
-    padding: 6px 27px;
-  }
-
-  .boxtext i {
-    color: #2858a0;
-    font-size: 20px;
-  }
-
-  .boxtext {
-    text-align: left !important;
-    margin-left: 0px;
-    padding: 9px 27px;
-  }
-
-  .boxtext p {
-    padding: 6px 0px;
-    margin-top: -6px;
-    text-align: left;
-    font-size: 19px;
-  }
-
-  .boxsection h4 {
-    margin: 0px 0px;
-  }
-
-  .list li {
-    display: inline-block;
-    background: #dbdbdb;
-    color: #3c3b3b;
-    padding: 8px 23px;
-    margin: 6px 12px;
-    border-radius: 21px;
-  }
-
-  .list {
-    margin: 0px 14px;
-  }
-
-  .boxsection li.active {
-    background: #4d4b4b;
-    color: #fff;
-  }
-
-  .special-dish-area1 {
-    background: #fff;
-    padding: 0px 0px;
-  }
-
-  .container-fluid.pad0 .row {
-    background: #e6e6e6;
-  }
-
-  .expabtp {
-    font-size: 19px;
-    text-align: justify;
-    padding: 79px 43px;
-    color: #646262;
-  }
-
-  .wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
-    background-color: #fff -webkit-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-  }
-
-  .wrap:after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-      3fff;
-  }
-
-  .slider {
-    position: relative;
-    padding: 0 0px;
-    margin: 5rem auto;
-    max-width: 1200px;
-    width: 100%;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: -25px;
-    border: none;
-    background: transparent;
-    color: #3c89c9;
-    font-family: monospace;
-    font-size: 5rem;
-    z-index: 300;
-    outline: none;
-  }
-
-  .slick-prev {
-    left: -50px;
-    text-align: left;
-  }
-
-  .slick-next {
-    right: -50px;
-    text-align: right;
-  }
-
-
-
-  .item.slick-slide {
-    width: 400px;
-    height: 400px !important;
-    transition: transform .4s;
-    position: relative;
-  }
-
-  .slick-slide:after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(193, 193, 193, 0.74);
-    transition: transform .4s;
-  }
-
-  .item.slick-slide {
-    transform: scale(0.7) translate(640px);
-    opacity: 0.2;
-  }
-
-  .item.slick-slide.slick-center+.slick-slide {
-    transform: scale(0.8) translate(-250px);
-    z-index: 10;
-  }
-
-  .item.slick-slide.slick-center+.slick-slide+.item.slick-slide {
-    transform: scale(0.7) translate(-640px);
-    z-index: 5;
-  }
-
-  .item.slick-slide.slick-active {
-    transform: scale(0.8) translate(250px);
-    opacity: 1;
-  }
-
-  .item.slick-slide.slick-center {
-    /* margin: 0 -10%; */
-    transform: scale(1);
-    z-index: 30;
-  }
-
-  .slick-center:after {
-    opacity: 0;
-  }
-</style>
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -1038,16 +817,6 @@
       touchMove: true,
       prevArrow: '<button class="slick-prev"> < </button>',
       nextArrow: '<button class="slick-next"> > </button>',
-
-      //         responsive: [                        
-      //             {
-      //               breakpoint: 576,
-      //               settings: {
-      //                 centerMode: false,
-      //                 variableWidth: false,
-      //               }
-      //             },
-      //         ]
     });
 
 

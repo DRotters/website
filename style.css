@@ -9729,3 +9729,6 @@ body {
 .open-button:hover {
   opacity: 1;
 }
+.stick .img-responsive{
+  max-width: 110px;
+}

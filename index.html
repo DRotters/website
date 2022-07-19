@@ -120,8 +120,19 @@
                       <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i>
                           DRotters</a></li>
                       <li><a href="academic.html"><i class="fa fa-book"></i> Academic</a></li>
+                      <li><a href="events.html"><i class="fa fa-book"></i> Events</a></li>
                     </ul>
                   </nav>
+                  <div class="p-1 bg-light rounded rounded-pill border border-secondary shadow-sm mb-4 mt-2">
+                    <div class="input-group">
+                      <input type="search" placeholder="Type to search experiences, DRotters etc."
+                        class="form-control border-0 bg-light shadow-none m-1">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" onclick="window.location.href='search_results.html'"
+                          class="btn btn-link text-secondary m-1 shadow-none"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -130,19 +141,19 @@
                     <div class="cart-area">
                       <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
                       <ul>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong">
                           <a><i class="fa fa-sign-in"></i> Sign In</a>
                         </li>
-                        <li>
+                        <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
                           <a><i class="fa fa-sign-out"></i> Sign Up</a>
                         </li>
-
                       </ul>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -174,10 +185,13 @@
     <div class="slider1-area ">
       <div class="bend niceties preview-1 ">
         <div id="ensign-nivoslider-3" class="slides">
+          <img src="img/slider/globeDRoterTheme.jpg" alt="slider" title="#slider-direction-3" />
           <img src="img/slider/northen_lights.jpg" alt="slider" title="#slider-direction-1" />
-          <img src="img/slider/ice_fishing.jpg" alt="slider" title="#slider-direction-2" />
-          <img src="img/slider/africa.jpg" alt="slider" title="#slider-direction-2" />
-          <img src="img/slider/slide1-3.jpg" alt="slider" title="#slider-direction-3" />
+          <img src="img/slider/homebanner3.jpg" alt="slider" title="#slider-direction-2" />
+          <img src="img/slider/india-culture-holy-tradition.jpg" alt="slider" title="#slider-direction-2" />
+          <img src="img/slider/9.jpg" alt="slider" title="#slider-direction-3" />
+          <img src="img/slider/banner_the_hide_game_drive_-_callum_gerrish.jpg" alt="slider"
+            title="#slider-direction-4" />
         </div>
       </div>
       <div class="welcome">
@@ -353,59 +367,14 @@
     <!-- Table Reservation 2 Area Start Here -->
 
     <!-- Table Reservation 2 Area End Here -->
-
-    <!-- Special Dish Area Start Here -->
-    <div class="special-dish-area experience">
-      <div class="container">
-        <h4 class="text-center">Experiences</h4>
-        <p style="text-align:center;">Explore your experiences</p>
-
-        <div class="">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="wrap">
-                <div class="slider">
-                  <div class="item">
-                    <img src="img/experience/wine.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/Delhi.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/medical.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/car.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/skie.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/roller.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/guitar.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="img/experience/1.png" alt="">
-                  </div>
-
-                </div>
-              </div>
-            </div> <!-- end div experience -->
-          </div> <!-- end row experience -->
-        </div> <!-- end container experience -->
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="container mt-4">
       <div class="exp-card">
         <h4 class="text-center">Things you may be interested</h4>
         <br>
         <div class="row">
           <div class="col-3">
             <div class="card">
-              <img class="card-img-top" src="img/things/things1.png" alt="Card image" style="max-width:400px">
+              <img class="card-img-top" src="img/things/3.jpg" alt="Card image" style="max-width:400px">
               <div class="card-body">
                 <p class="card-text">The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool</p>
                 <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
@@ -415,7 +384,7 @@
           <div class="col-3">
             <div class="card">
               <div class="card">
-                <img class="card-img-top" src="img/things/mountain.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="img/things/5.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
@@ -428,7 +397,8 @@
               <div class="card">
                 <img class="card-img-top" src="img/things/hotair.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                  <p class="card-text">
+                    Some example text some example text. John Doe is an architect and engineer
                   </p>
                   <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
                 </div>
@@ -438,9 +408,12 @@
           <div class="col-3">
             <div class="card">
               <div class="card">
-                <img class="card-img-top" src="img/things/boat.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top"
+                  src="img/things/IMG_QLD_Cairns_KurandaScenicRailway_(c)Tourism&EventsQueensland&TourismTropicalNorthQueensland_1200x800_146665.jpg"
+                  alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <p class="card-text">The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool
+                  <p class="card-text">
+                    The Perfect Trip to Tallinn, Europe’s Fast-Rising Capital of Cool
                   </p>
                   <a href="experience_detail.html" class="btn btn-primary stretched-link">Details</a>
                 </div>
@@ -450,8 +423,7 @@
           <div class="table-reservation2-area1">
             <div class="container">
               <div class="boxsection">
-                <h4 style="text-align:center;">Experiences Near You</h4>
-                <p style="text-align:center;">24 Experiences for you</p>
+                <h4 style="text-align:center;" class="mb-4">Most searched recently</h4>
                 <div class="row">
                   <div class="col-md-4 ">
                     <div class="box pad0">
@@ -487,7 +459,7 @@
                   <div class="col-md-4 ">
                     <div class="box pad0">
                       <div class="img">
-                        <img src="img/experience/1_3.png"></img>
+                        <img src="img/exp_near/IMG_DarwinTL1200x800.jpg"></img>
                       </div>
                       <div class="boxtext">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -504,7 +476,7 @@
                   <div class="col-md-4 ">
                     <div class="box pad0">
                       <div class="img">
-                        <img src="img/experience/1_1.png"></img>
+                        <img src="img/exp_near/10.jpg"></img>
                       </div>
                     </div>
                     <div class="boxtext">
@@ -520,7 +492,7 @@
                   <div class="col-md-4 ">
                     <div class="box pad0">
                       <div class="img">
-                        <img src="img/experience/1_2.png"></img>
+                        <img src="img/exp_near/IMG_DarwinHERO1200x800.jpg"></img>
                       </div>
                       <div class="boxtext">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -535,7 +507,7 @@
                   <div class="col-md-4 ">
                     <div class="box pad0">
                       <div class="img">
-                        <img src="img/experience/1_3.png"></img>
+                        <img src="img/exp_near/banner5.jpg"></img>
                       </div>
                       <div class="boxtext">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -549,9 +521,6 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <img src="img/learnmorebtn.png" class="learnbtn"><img>
-              </div>
             </div>
           </div>
           <!-- Client Reviews Area End Here -->
@@ -563,13 +532,15 @@
                   <img src="img/map1.png"></img>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <p class="expabtp">If you travel, you can experience things that you could never experience at
+                  <p class="expabtp">
+                    If you travel, you can experience things that you could never experience at
                     home. You may see beautiful places and landscapes that do not exist where you live. You may
                     meet people that will change your life, and your thinking. You may try activities that you
                     have never tried before <br> Travelling will inevitably make you more independent and
                     confident. You will realize that you can cope with a lot of unexpected situations. You will
                     realize that you can survive without all that help that is always available for you at home.
-                    You will likely find out that you are much stronger and braver than you have expected.</p>
+                    You will likely find out that you are much stronger and braver than you have expected.
+                  </p>
                 </div>
               </div>
             </div>
@@ -577,6 +548,86 @@
               <img src="img/logo.png" class="learnbtn"><img>
             </div>
           </div>
+
+          <!-- POPUP SIGNIN -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Sign In</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+
+                    <div class="form-group">
+                      <label>Username </label>
+                      <input type="text" placeholder="username" class="form-control" id="txtUserName">
+                    </div>
+                    <div class="form-group">
+                      <label>Password </label>
+                      <input type="password" placeholder="Password" class="form-control" id="txtPassword">
+                    </div>
+                    <div class="btn btn-primary loginbtn" id="btnLogin" onclick="location.href='content.html';">Login
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Sign Up</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+
+                    <div class="form-group col-md-6">
+                      <label>First Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="First Name" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Last Name <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Last Name" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Mobile Number <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Mobile Number" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Email <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Email" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Address Line 1 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Address Line 1" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Address Line 2 <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Address Line 2" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Pincode <sup><i class="fa fa-star" style="color:red"></i></sup></label>
+                      <input type="text" placeholder="Pincode" required class="form-control">
+                    </div>
+
+                  </div>
+                  <div class="btn btn-primary loginbtn" data-dismiss="modal">Sign Up</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- POPUP SIGNIN -->
+
           <!-- side bar -->
           <div class="wrapper">
             <!-- Sidebar -->
@@ -599,9 +650,11 @@
                       <div class="media-body">
                         <h5 class="media-heading">2-3 cups of coffee a day may reduce kidney injury risk by 23%</h5>
 
-                        <p>Knowing more about how coffee consumption affects the incidence of other kidney-related
+                        <p>
+                          Knowing more about how coffee consumption affects the incidence of other kidney-related
                           conditions could help policymakers take steps to reduce people’s risk of developing
-                          progressive kidney disease.</p>
+                          progressive kidney disease.
+                        </p>
                         <ul class="list-inline list-unstyled">
                           <li><span><i class="glyphicon glyphicon-user"></i> by Rozer Flims </span></li>
                           <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
@@ -632,13 +685,17 @@
                         <img class="media-object" src="img/sidebar/covid.jpg">
                       </a>
                       <div class="media-body">
-                        <h5 class="media-heading float-left">Long COVID: Disrupted sleep, fatigue common months after
-                          infection</h5>
-                        <p>According to the research, nearly half of those who recovered from COVID-19 experience at
+                        <h5 class="media-heading float-left">
+                          Long COVID: Disrupted sleep, fatigue common months after
+                          infection
+                        </h5>
+                        <p>
+                          According to the research, nearly half of those who recovered from COVID-19 experience at
                           least moderate sleep issues.<br />
                           The research was presented in June at Sleep 2022, a meeting of the Associated Professional
                           Sleep Societies, a joint venture of the American Academy of Sleep Medicine (AASM) and the
-                          Sleep Research Society (SRS).</p>
+                          Sleep Research Society (SRS).
+                        </p>
                         <ul class="list-inline list-unstyled">
                           <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
                           <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
@@ -669,8 +726,11 @@
                         <img class="media-object" src="img/sidebar/vaccine.png">
                       </a>
                       <div class="media-body">
-                        <h5 class="media-heading float-left">Pfizer and BioNTech to test universal COVID-19 vaccine candidate</h5>
-                        <p>To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine. To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19 vaccine.</p>
+                        <h5 class="media-heading float-left">Pfizer and BioNTech to test universal COVID-19 vaccine
+                          candidate</h5>
+                        <p>To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal COVID-19
+                          vaccine. To overcome waning COVID-19 vaccine efficacy, researchers are developing a universal
+                          COVID-19 vaccine.</p>
                         <ul class="list-inline list-unstyled">
                           <li><span><i class="glyphicon glyphicon-user"></i> by Styne Anderson </span></li>
                           <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
@@ -701,8 +761,13 @@
                         <img class="media-object" src="img/sidebar/covid-us.jpg">
                       </a>
                       <div class="media-body">
-                        <h5 class="media-heading float-left">'Don't Panic': U.S. Has Tools to Manage BA.5, White House Says</h5>
-                        <p>The BA.5 Omicron subvariant is dominating now and accounts for 65% – or about two-thirds – of the virus causing COVID-19 in the United States, federal officials said on Tuesday. Although no evidence yet points to BA.5 causing more severe disease, hospitalization numbers are up in the past few months and case numbers are on the rise with this highly transmissible strain of the virus.</p>
+                        <h5 class="media-heading float-left">'Don't Panic': U.S. Has Tools to Manage BA.5, White House
+                          Says</h5>
+                        <p>The BA.5 Omicron subvariant is dominating now and accounts for 65% – or about two-thirds – of
+                          the virus causing COVID-19 in the United States, federal officials said on Tuesday. Although
+                          no evidence yet points to BA.5 causing more severe disease, hospitalization numbers are up in
+                          the past few months and case numbers are on the rise with this highly transmissible strain of
+                          the virus.</p>
                         <ul class="list-inline list-unstyled">
                           <li><span><i class="glyphicon glyphicon-user"></i> by Damian McNamara, MA</span></li>
                           <li><span><i class="glyphicon glyphicon-calendar"></i> 3 days, 4 hours </span></li>
@@ -731,7 +796,6 @@
               </nav>
 
               <!-- Page Content -->
-
               <!-- Dark Overlay element -->
             </div>
             <div id="content">
@@ -742,7 +806,6 @@
             </div>
           </div>
           <!-- side bar end -->
-
           <!-- Footer Area Start Here -->
           <footer>
             <div class="footer-area-top section-space">
@@ -799,255 +862,98 @@
                 </div>
               </div>
             </div>
-
-
-
-<!--class="open-button"-------SAN-->
-<button  alt="Chat"  class="btn open-button"  onclick="openForm()">
-   <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
-</button>
-
-<div class="chat-popup" id="myForm">
-  <form action="" class="form-container">
-    
-    <!--
-    <h1>Chat</h1>
-    <label for="msg"><b>Message</b></label>-->
-    <header class="chatbox-header">
-    <aside style="flex:3">
-      <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
-    </aside>
-    <aside style="flex:8">
-      <h1>Drotter</h1>(Online)
-    </aside>
-    <aside style="flex:1">
-      <button class="chatbox-maximize"><i class="fa fa-window-close" aria-hidden="true"></i></button>
-    </aside>
-  </header>
-
-    <footer class="chatbox-footer">
-      <aside style="flex:10">
-        <textarea type="text" placeholder="Type your message here..." autofocus=""></textarea>
-      </aside>
-      
-      <button  type="submit" style="flex:1;color:rgb(26, 79, 179);text-align:center;">
-        <i class="fa fa-paper-plane" aria-hidden="true"></i> 
-      </button>
-        
-    
-    </footer>
-    <!--
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>-->
-  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  
-    
-  </form>
-</div>
-
-<script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  </script>
-
-<style>
-  
-  body {font-family: Arial, Helvetica, sans-serif;}
-   * {box-sizing: border-box;}
-   
-   /*  Button used to open the chat form - fixed at the bottom of the page */
-   .open-button {
-     
-      position: fixed;
-      right: 10px;
-      top: 55%;
-      z-index: 10;
-      border: 1px solid;
-      box-shadow: 1px;
-      background: white;
-
-   }
-   
-   /* The popup chat - hidden by default */
-   .chat-popup {
-   display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  width: 377px;
-  border: 0px solid #f1f1f1;
-  z-index: 9;
-
-    
-
-   }
-   .chatbox-header{
-    box-sizing: border-box;
-    display: flex;
-    width: 100%;
-    padding: 16px;
-    color: #fff;
-    background-color: #0360a5;
-    align-items: center;
-    justify-content: space-around;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-
-   }
-
-.chatbox-footer{
-
-    box-sizing: border-box;
-    display: flex;
-    width: 100%;
-    padding: 1px;
-    border-top: 1px solid #ddd;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-}
-
-   /* Add styles to the form container */
-   .form-container {
-     max-width: 100%;
-    padding: 5px; /**/
-     background-color: rgba(255, 255, 255, 0.99);
-     border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-
-   }
-   
-   /* Full-width textarea */
-   .form-container textarea {
-     width: 100%;
-     padding: 10px;
-     margin: 5px 0 22px 0;
-     border: none;
-     background: #f1f1f1;
-     resize: none;
-     min-height: 100px;
-   }
-   
-   /* When the textarea gets focus, do something */
-   .form-container textarea:focus {
-     background-color: #ddd;
-     outline: none;
-   }
-   
-   /* Set a style for the submit/send button */
-   .form-container .btn {
-     background-color: #042eaa;
-     color: white;
-     padding: 16px 20px;
-     border: none;
-     cursor: pointer;
-     width: 100%;
-     margin-bottom:10px;
-     opacity: 0.8;
-   }
-   
-   /* Add a red background color to the cancel button */
-   .form-container .cancel {
-     background-color: rgba(255, 0, 0, 0.586);
-   }
-   
-   /* Add some hover effects to buttons */
-   .form-container .btn:hover, .open-button:hover {
-     opacity: 1;
-   }
-   
-   </style>
-
-
-
-
-<!---------SAN-->
-
-
-
-
-
-
-
-
           </footer>
           <!-- Footer Area End Here -->
         </div>
-        <!-- Style Switch Start Here -->
+      </div>
+    </div>
+    <!-- ChatBox Code-->
 
-        <!-- Style Switch End Here -->
-        <!-- Preloader Start Here -->
-        <!--  <div id="preloader"></div> -->
-        <!-- Preloader End Here -->
-        <!-- jquery-->
-        <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <!--class="open-button"-------SAN-->
+    <button alt="Chat" class="btn open-button" onclick="openForm()">
+      <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
+    </button>
 
-        <!-- Plugins js -->
-        <script src="js/plugins.js" type="text/javascript"></script>
+    <div class="chat-popup" id="myForm">
+      <form action="" class="form-container">
+        <header class="chatbox-header">
+          <aside style="flex:3">
+            <i class="fa fa-user-circle fa-4x chatbox-popup__avatar" aria-hidden="true"></i>
+          </aside>
+          <aside style="flex:8">
+            <h3>DRotter Help! </h3>
+          </aside>
+        </header>
+        <footer class="chatbox-footer">
+          <aside style="flex:10">
+            <textarea type="text" placeholder="Type your message here..." autofocus=""></textarea>
+          </aside>
+          <button type="submit" style="flex:1;color:rgb(26, 79, 179);text-align:center;">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </footer>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <!-- Style Switch Start Here -->
 
-        <!-- Bootstrap js -->
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Style Switch End Here -->
+    <!-- Preloader Start Here -->
+    <!--  <div id="preloader"></div> -->
+    <!-- Preloader End Here -->
+    <!-- jquery-->
 
-        <!-- WOW JS -->
-        <script src="js/wow.min.js"></script>
 
-        <!-- Nivo slider js -->
-        <script src="vendor/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-        <script src="vendor/slider/home.js" type="text/javascript"></script>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
 
-        <!-- Owl Cauosel JS -->
-        <script src="vendor/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js" type="text/javascript"></script>
 
-        <!-- Meanmenu Js -->
-        <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-        <!-- Srollup js -->
-        <script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <!-- WOW JS -->
+    <script src="js/wow.min.js"></script>
 
-        <!-- jquery.counterup js -->
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
+    <!-- Nivo slider js -->
+    <script src="vendor/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="vendor/slider/home.js" type="text/javascript"></script>
 
-        <!-- Switch js -->
-        <script src="js/switch-style.js" type="text/javascript"></script>
-        <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
-        <!-- Date Time Picker Js -->
-        <script src="js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="vendor/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
 
-        <!-- Validator js -->
-        <script src="js/validator.min.js" type="text/javascript"></script>
+    <!-- Meanmenu Js -->
+    <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
 
-        <!-- Custom Js -->
-        <script src="js/main.js" type="text/javascript"></script>
+    <!-- Srollup js -->
+    <script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
 
-        <!--SAN--- ChatBox Js -->
-        <script src="js/ChatBox.js" type="text/javascript"></script>
+    <!-- jquery.counterup js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- Switch js -->
+    <script src="js/switch-style.js" type="text/javascript"></script>
+    <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <!-- Date Time Picker Js -->
+    <script src="js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
+
+    <!-- Validator js -->
+    <script src="js/validator.min.js" type="text/javascript"></script>
+
+    <!-- Custom Js -->
+    <script src="js/main.js" type="text/javascript"></script>
+  </div>
 </body>
-
-<!-- <script>
-
-    $(function () {
-        var stickyHeaderTop = $('#stickytypeheader').offset().top;
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > stickyHeaderTop) {
-                $('#stickytypeheader').css({ position: 'fixed', top: '0px', z- index: '9', width: '88%'});
-        $('#sticky').css('display', 'block');
-    } else {
-        $('#stickytypeheader').css({ position: 'static', top: '0px' });
-        $('#sticky').css('display', 'none');
-    }
-        });
-  });
-</script> -->
 <script type="text/javascript">
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
   $(document).ready(function () {
 
     $('#dismiss, .overlay').on('click', function () {
@@ -1060,426 +966,6 @@
 
   });
 </script>
-<style>
-  .experience {
-    /* margin-top: 5%; */
-    width: 100%;
-    background-color: #fff;
-    height: auto;
-    < !-- background: -webkit-radial-gradient(center, ellipse cover, rgba(232, 255, 168, 1) 0%, rgba(0, 163, 163, 0.35) 100%), url(http://2.1m.yt/tPpsnnE.jpg) no-repeat top center scroll;
-    -->-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-
-  #slider-experience {
-    /* padding-top: 30px; */
-    padding-bottom: 30px;
-  }
-
-  img.work {
-    width: 50%;
-    margin-bottom: 25px;
-  }
-
-  .experience date {
-    font-style: italic;
-    font-size: 17px;
-  }
-
-  .experience h5 {
-    color: #008080;
-    font-size: 27px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-
-  .carousel-caption {
-    position: static;
-    /*/ this is to replace the images of bootstrap slider /*/
-    /* margin-top: 5%; */
-    font-size: 22px;
-    color: #333;
-    min-height: 470px;
-  }
-
-  .carousel-control.left,
-  .carousel-control.right {
-    background: none;
-  }
-
-
-
-  .wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
-    background-color: #fff -webkit-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-  }
-
-  .wrap:after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-      3fff;
-  }
-
-  .slider {
-    position: relative;
-    padding: 0 0px;
-    max-width: 1200px;
-    width: 100%;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: -25px;
-    border: none;
-    background: transparent;
-    color: #3c89c9;
-    font-family: monospace;
-    font-size: 5rem;
-    z-index: 300;
-    outline: none;
-  }
-
-  .slick-prev {
-    /* left: -50px; */
-    text-align: left;
-  }
-
-  .slick-next {
-    right: -50px;
-    text-align: right;
-  }
-
-
-
-  .item.slick-slide {
-    width: 400px;
-    height: 400px !important;
-    transition: transform .4s;
-    position: relative;
-  }
-
-  .slick-slide:after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(193, 193, 193, 0.74);
-    transition: transform .4s;
-  }
-
-  .item.slick-slide {
-    transform: scale(0.7) translate(640px);
-    opacity: 0.2;
-  }
-
-  .item.slick-slide.slick-center+.slick-slide {
-    transform: scale(0.8) translate(-250px);
-    z-index: 10;
-  }
-
-  .item.slick-slide.slick-center+.slick-slide+.item.slick-slide {
-    transform: scale(0.7) translate(-640px);
-    z-index: 5;
-  }
-
-  .item.slick-slide.slick-active {
-    transform: scale(0.8) translate(250px);
-    opacity: 1;
-  }
-
-  .item.slick-slide.slick-center {
-    /* margin: 0 -10%; */
-    transform: scale(1);
-    z-index: 30;
-  }
-
-  .slick-center:after {
-    opacity: 0;
-  }
-
-  .table-reservation2-area1 .box {
-    box-shadow: 0px 0px 0px transparent;
-  }
-
-  .table-reservation2-area1 .box img {
-    border-radius: 36px;
-  }
-
-  .boxtext {
-    text-align: left !important;
-    margin-left: 0px;
-    padding: 6px 27px;
-  }
-
-  .boxtext i {
-    color: #2858a0;
-    font-size: 20px;
-  }
-
-  .boxtext {
-    text-align: left !important;
-    margin-left: 0px;
-    padding: 9px 27px;
-  }
-
-  .boxtext p {
-    padding: 6px 0px;
-    margin-top: -6px;
-    text-align: left;
-    font-size: 19px;
-  }
-
-  .boxsection h4 {
-    margin: 0px 0px;
-  }
-
-  .list li {
-    display: inline-block;
-    background: #dbdbdb;
-    color: #3c3b3b;
-    padding: 8px 23px;
-    margin: 6px 12px;
-    border-radius: 21px;
-  }
-
-  .list {
-    margin: 0px 14px;
-  }
-
-  .boxsection li.active {
-    background: #4d4b4b;
-    color: #fff;
-  }
-
-  .special-dish-area1 {
-    background: #fff;
-    padding: 0px 0px;
-  }
-
-  .container-fluid.pad0 .row {
-    background: #e6e6e6;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .expabtp {
-    font-size: 19px;
-    text-align: justify;
-    padding: 79px 43px;
-    color: #646262;
-  }
-
-
-
-/*  -----SAN----*/
-
-
-$primary-color: #0360a5;
-$accent-color: #f6f7f9;
-#fff: #fff;
-$font-color: #888;
-
-@mixin chabox-container {
-  display: flex;
-  position: absolute;
-  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
-  flex-direction: column;
-}
-
-@mixin chatbox-header {
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  padding: 16px;
-  color: #fff;
-  background-color: #0360a5;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin chatbox-main {
-  box-sizing: border-box;
-  width: 100%;
-  padding: calc(2 * #{16px}) #{16px};
-  line-height: calc(#{16px} + #{16px} / 2);
-  color: $font-color;
-  text-align: center;
-}
-
-@mixin chatbox-footer {
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  padding: 16px;
-  border-top: 1px solid #ddd;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin chatbox-floating-button {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 52px;
-  height: 52px;
-  color: #fff;
-  background-color: #0360a5;
-  background-position: center center;
-  background-repeat: no-repeat;
-  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
-  background-color: #f6f7f9;
-}
-
-h1 {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1;
-}
-
-button {
-  color: inherit;
-  background-color: transparent;
-  border: 0;
-  outline: 0 !important;
-  cursor: pointer;
-
-  &.chatbox-open {
-    @include chatbox-floating-button;
-    margin: 16px;
-  }
-
-  &.chatbox-close {
-    @include chatbox-floating-button;
-    display: none;
-    margin: 16px calc(2 * #{16px} + #{52px})
-      16px 16px;
-  }
-}
-
-textarea {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  height: calc({16px} + {16px} / 2);
-  padding: 0 calc(#{16px} / 2);
-  font-family: inherit;
-  font-size: 16px;
-  line-height: calc(#{16px} + #{16px} / 2);
-  color: $font-color;
-  background-color: none;
-  border: 0;
-  outline: 0 !important;
-  resize: none;
-  overflow: hidden;
-
-  &::placeholder {
-    color: $font-color;
-  }
-}
-
-.chatbox-popup {
-  @include chabox-container;
-  display: none;
-  bottom: calc(2 * #{16px} + #{52px});
-  right: 16px;
-  width: 377px;
-  height: auto;
-  background-color: #fff;
-  border-radius: 16px;
-
-  .chatbox-popup__header {
-    @include chatbox-header;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-
-    .chatbox-popup__avatar {
-      margin-top: -32px;
-      background-color: #0360a5;
-      border: 5px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-    }
-  }
-
-  .chatbox-popup__main {
-    @include chatbox-main;
-  }
-
-  .chatbox-popup__footer {
-    @include chatbox-footer;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-  }
-}
-
-.chatbox-panel {
-  @include chabox-container;
-  display: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 377px;
-  background-color: #fff;
-
-  .chatbox-panel__header {
-    @include chatbox-header;
-    flex: 0 0 auto;
-  }
-
-  .chatbox-panel__main {
-    @include chatbox-main;
-    flex: 1 1 auto;
-  }
-
-  .chatbox-panel__footer {
-    @include chatbox-footer;
-    flex: 0 0 auto;
-  }
-}
-
-
-<!---SAN-->
-
-
-
-
-
-
-
-
-</style>
-
-
-
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -1499,19 +985,7 @@ textarea {
       touchMove: true,
       prevArrow: '<button class="slick-prev"> < </button>',
       nextArrow: '<button class="slick-next"> > </button>',
-
-      //         responsive: [                        
-      //             {
-      //               breakpoint: 576,
-      //               settings: {
-      //                 centerMode: false,
-      //                 variableWidth: false,
-      //               }
-      //             },
-      //         ]
     });
-
-
     var imgs = $('.slider img');
     imgs.each(function () {
       var item = $(this).closest('.item');

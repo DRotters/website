@@ -78,18 +78,18 @@
                     <ul>
                       <li class="active " ><a class="homemenuli" href="index.html"><i class="fa fa-home"></i> Home</a>
                       </li>
-                      <li><a href="experience.html"><i class="fa fa-hourglass-end"></i>
+                      <li><a href="experience.html" id="li_Experience"><i class="fa fa-hourglass-end"></i>
                           Experience</a></li>
-                      <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i>
+                      <li><a href="DRotters.html" id="li_Drotters"> <i class="fa fa-medkit" aria-hidden="true"></i>
                           DRotters</a></li>
-                      <li><a href="academic.html"><i class="fa fa-book"></i> Academic</a></li>
-                      <li><a href="events.html"><i class="fa fa-book"></i> Events</a></li>
+                      <li><a href="academic.html"  id="li_Academic"><i class="fa fa-book"></i> Academic</a></li>
+                      <li><a href="events.html"  id="li_Events"><i class="fa fa-book"></i> Events</a></li>
                     </ul>
                   </nav>
                 </div>
-				 <ul id="menumainbox" >
+				 <ul id="menumainbox" class="hideMenu" >
 				 
-                                                        <div class="row homemenu">
+                                                        <div class="row homemenu hideMenu" id="menumainbox_Academic">
 														<div class="col-md-3">
 														<div class="imgcarddesign">
 														<div class="menuimg">
@@ -130,8 +130,6 @@
 														</div>
 														</div>
 														</div>
-														
-														
 														<div class="col-md-3">
 														<div class="imgcarddesign">
 														<div class="menuimg">
@@ -154,7 +152,7 @@
 														</div>
 														</div>
 														
-														<div class="row">
+														<div class="row hideMenu" id="menumainbox_Events">
 														<h3 class="mainsubheading">Regions of India</h3>
 														<div class="locbox">
 														<div class="col-md-2 col-xs-12">
@@ -231,12 +229,11 @@
 														<li><a class="locboxlista" href="">Telangana</a></li>
 														</ul>
 														</div>
-														
 														</div>
 														</div>
 														
                                                      
-                                                        <div class="row experiencemenu">
+                                                        <div class="row experiencemenu hideMenu" id="menumainbox_experiencemenu">
 														<div class="col-md-3">
 														<div class="imgcarddesign">
 														<div class="menuimg">
@@ -363,7 +360,7 @@
 														</div>
 														
 														
-														<div class="row drottersmenu">
+														<div class="row drottersmenu hideMenu" id="menumainbox_drottersmenu">
 														<div class="col-md-3">
 														<div class="imgcarddesign">
 														<div class="menuimg">
@@ -1575,6 +1572,14 @@
   color: #fff;
   position: relative;
 }
+
+.hideMenu{
+	display: none;
+}
+
+.showMenu{
+	display: block;
+}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
@@ -1619,7 +1624,83 @@
       });
       $(this).hide();
     });
+	
+	$("#li_Academic").hover(function(){
+		ShowMenuItem("academic");
+	}, 
+	function(){
+        MenuHideLogic();
+	});
+	$("#li_Events").hover(function(){
+		ShowMenuItem("events");
+	}, 
+	function(){
+        MenuHideLogic();
+	});
+	$("#li_Experience").hover(function(){
+		ShowMenuItem("experience");
+	}, 
+	function(){
+        MenuHideLogic();
+	});
+	$("#li_Drotters").hover(function(){
+		ShowMenuItem("drotters");
+	}, 
+	function(){
+        MenuHideLogic();
+	});
+	
+	$("body").on('mouseleave', '#menumainbox', function(e){
+    ShowMenuItem("");
+});
   });
+  
+
+    function MenuHideLogic() {
+        setTimeout(function () {
+            if ($('#menumainbox:hover').length == 0) {
+                ShowMenuItem("");
+            }
+        }, 500);
+    }
+
+  function ShowMenuItem(menuItem){
+  	$('#menumainbox').addClass("hideMenu");
+	$('#menumainbox_Academic').addClass("hideMenu");
+	$('#menumainbox_Events').addClass("hideMenu");	
+  	$('#menumainbox_experiencemenu').addClass("hideMenu");
+	$('#menumainbox_drottersmenu').addClass("hideMenu");
+	
+	$('#menumainbox').removeClass("showMenu");
+	$('#menumainbox_Academic').removeClass("showMenu");
+	$('#menumainbox_Events').removeClass("showMenu");	
+  	$('#menumainbox_experiencemenu').removeClass("showMenu");
+	$('#menumainbox_drottersmenu').removeClass("showMenu");
+	
+	if(menuItem != ""){
+	$('#menumainbox').removeClass("hideMenu");
+	$('#menumainbox').addClass("showMenu");
+	switch(menuItem) {
+	case "academic":
+		$('#menumainbox_Academic').addClass("showMenu");
+		$('#menumainbox_Academic').removeClass("hideMenu");
+    break;
+  case "events":
+    	$('#menumainbox_Events').addClass("showMenu");
+		$('#menumainbox_Events').removeClass("hideMenu");
+    break;
+  case "experience":
+    	$('#menumainbox_experiencemenu').addClass("showMenu");
+		$('#menumainbox_experiencemenu').removeClass("hideMenu");
+    break;
+  case "drotters":
+    	$('#menumainbox_drottersmenu').addClass("showMenu");
+		$('#menumainbox_drottersmenu').removeClass("hideMenu");
+    break;	
+	}
+	}
+	
+  }
 </script>
 
 

@@ -145,20 +145,22 @@
 
 
 
-    <div class="special-dish-area experience p-5 my-5 border bg-light">
+    <div class="special-dish-area experience p-5 my-5 border bg-light rounded-lg">
 
          <div class="container">
 
             <div class="row">
 
               <!---Column 1-->
-                  <div class="col">
-                              <div class="signinhosrbox p-1 my-1 border bg-white">
-                                <div class="hostbac ">
+                  <div class="col-lg-3">
+                              <div class="signinhosrbox pb-5 my-1 border border-white border-9 rounded bg-white ">
+                                
+                                <div class="hostbac" style="align:centre">
                                   <img src="img/hostimg.png"></img>
                                 </div>
+
                                 <div class="hostdetails text-center">
-                                  <h4>Jhon</h4>
+                                  <h5>Jhon</h5>
                                   <p>Neurologist | Doctor | Australia</p>
                                   <p><small>Last login : 15 June 2022</small></p>
                                   <hr>
@@ -175,40 +177,40 @@
 
             <!---Column 2-->
                  <div class="col-md-6 col-xs-12">
-                            <div class="contentcenterbox p-2 my-1 border bg-white">
+                            <div class="contentcenterbox p-2 my-1 border border-white border-9 rounded bg-white">
                               <div class="row">
                                   <div class="col-md-2 col-xs-10">
                                     <img src="img/hostimg.png"></img>
                                   </div>
 
-                                  <div class="col-md-8 col-xs-8">
-                                    <div class="form-group">
-                                      <input type="text" class="form-control border" placeholder="What's on your mind?">
+                                  <div class="col-md-8 col-xs-6">
+                                    <div class="p-1 bg-light rounded rounded-pill border border-secondary shadow-sm mb-4 mt-2">
+                                      <input type="text" class="form-control border-0 bg-light shadow-none m-0" placeholder="What's on your mind?">
                                     </div>
                                   </div>
 
                               </div>
 
-                              <div class="row linkboxsec ">
-                                <div class="col-sm-3 col-xs-6">
+                              <div class="row ">
+                                <div class="col-sm-3">
                                   <div class="icon text-center">
                                     <img src="img/photo.png"></img>
                                     <p>Photo</p>
                                   </div>
                                 </div>
-                                <div class="col-md-3 col-xs-6">
+                                <div class="col-sm-3">
                                   <div class="icon text-center">
                                     <img src="img/video.png"></img>
                                     <p>Video</p>
                                   </div>
                                 </div>
-                                <div class="col-md-3 col-xs-6">
+                                <div class="col-sm-3">
                                   <div class="icon text-center">
                                     <img src="img/event.png"></img>
                                     <p>Event</p>
                                   </div>
                                 </div>
-                                <div class="col-md-3 col-xs-6">
+                                <div class="col-sm-3">
                                   <div class="icon text-center">
                                     <img src="img/writearticle.png"></img>
                                     <p>Write Article</p>
@@ -263,64 +265,139 @@
                                 </table>
 
                               </div>-->
-                  </div>
+                            </div>
+                            
+                            <div>&nbsp;</div>
+                            <div class="contentcenterbox p-2 my-1 border border-white border-9 rounded bg-white"> <!--row hostcenterboxdetails-->
+                                    <div class="col-md-2">
+                                      <img src="img/hostimg.png"></img>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <h4 class=".text-dark">Jhon</h4>
+                                      <p>Neurologist | Doctor | Australia</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <h4>&nbsp;</h4>
+                                      <p>Posted on : 08 June 2022</p>
+                                    </div>
+                                    <hr>
+                                    <h4>My new sketch</h4>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
+                                    <img src="img/images.jpg"></img>
 
-                  <div class="contentcenterbox p-2 my-1 border bg-white"> <!--row hostcenterboxdetails-->
-                          <div class="col-md-2">
-                            <img src="img/hostimg.png"></img>
-                          </div>
-                          <div class="col-md-6">
-                            <h4>Jhon</h4>
-                            <p>Neurologist | Doctor | Australia</p>
-                          </div>
-                          <div class="col-md-4">
-                            <h4>&nbsp;</h4>
-                            <p>Posted on : 08 June 2022</p>
-                          </div>
-                          <hr>
-                          <h4>My new sketch</h4>
-                          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
-                          <img src="img/images.jpg"></img>
+                                    <div class="row">
 
-                          <div class="row">
-                            <table class="commentssec">
-                              <tr>
-                                <td>
-                                  <div class="commentbox ">
-                                    <i class="iconHeartInactive fa fa-thumbs-up"></i>
-                                    <p>Like</p>
-                                  </div>
-                                  <p class="commentscount">29</p>
-                                </td>
-                                <td>
-                                  <div class="commentbox" data-toggle="modal" data-target="#commentpopup">
-                                    <i class="fa fa-comments"></i>
-                                    <p>Comment</p>
-                                  </div>
-                                  <p class="commentscount">29</p>
-                                </td>
-                                <td>
+
+                                          <div class="col-sm-4">
+                                              <div class="commentbox">
+                                                  <i class="iconHeartInactive fa fa-thumbs-up" style='color:#1882b7'></i>
+                                                  <p>Like</p>
+                                              </div>
+                                              <p class="commentscount">29</p>
+                                          </div> 
+
+                                          <div class="col-sm-4">
+                                            <div class="commentbox" data-toggle="modal" data-target="#commentpopup">
+                                              <i class="fa fa-comments" style='color:#1882b7'></i>
+                                              <p>Comment</p>
+                                            </div>
+                                            <p class="commentscount" style='color:#1882b7'>29</p>
+                                          </div>
+
+                                          <div class="col-sm-3">
+                                            <div class="commentbox">
+                                              <i class="fa fa-share-alt" style='color:#1882b7'></i>
+                                              <p>Share</p>
+                                            </div>
+                                            <p class="commentscount">29</p>
+                                          </div>
+
+                                    </div>
+                            </div>
+                            <div>&nbsp;</div>  
+
+                            <div class="contentcenterbox p-2 my-1 border border-white border-9 rounded bg-white"> <!--row hostcenterboxdetails-->
+                              <div class="col-md-2">
+                                <img src="img/hostimg.png"></img>
+                              </div>
+                              <div class="col-md-6">
+                                <h5>Jhon</h5>
+                                <p>Neurologist | Doctor | Australia</p>
+                              </div>
+                              <div class="col-md-4">
+                                <h4>&nbsp;</h4>
+                                <p>Posted on : 05 June 2022</p>
+                              </div>
+                              <hr>
+                              <h4>My new Video</h4>
+                              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
+                              <img src="img/award1-back.jpg"></img>
+
+
+                              <div class="row">
+                                <div class="col-sm-4">
                                   <div class="commentbox">
-                                    <i class="fa fa-share-alt"></i>
-                                    <p>Share</p>
+                                      <i class="iconHeartInactive fa fa-thumbs-up" style='color:#1882b7'></i>
+                                      <p>Like</p>
                                   </div>
-                                  <p class="commentscount">29</p>
-                                </td>
-                              </tr>
-                            </table>
-        
-                          </div>
-                  </div>
-                  
-                  
-                  
+                                  <p class="commentscount">9</p>
+                              </div> 
+
+                              <div class="col-sm-4">
+                                <div class="commentbox" data-toggle="modal" data-target="#commentpopup">
+                                  <i class="fa fa-comments" style='color:#1882b7'></i>
+                                  <p>Comment</p>
+                                </div>
+                                <p class="commentscount" style='color:#1882b7'>4</p>
+                              </div>
+
+                              <div class="col-sm-3">
+                                <div class="commentbox">
+                                  <i class="fa fa-share-alt" style='color:#1882b7'></i>
+                                  <p>Share</p>
+                                </div>
+                                <p class="commentscount">6</p>
+                              </div>
+
+<!--
+                                <table class="commentssec">
+                                  <tr>
+                                    <td>
+                                      <div class="commentbox ">
+                                        <i class="iconHeartInactive fa fa-thumbs-up"></i>
+                                        <p>Like</p>
+                                      </div>
+                                      <p class="commentscount">5</p>
+                                    </td>
+                                    <td>
+                                      <div class="commentbox" data-toggle="modal" data-target="#commentpopup">
+                                        <i class="fa fa-comments"></i>
+                                        <p>Comment</p>
+                                      </div>
+                                      <p class="commentscount">29</p>
+                                    </td>
+                                    <td>
+                                      <div class="commentbox">
+                                        <i class="fa fa-share-alt"></i>
+                                        <p>Share</p>
+                                      </div>
+                                      <p class="commentscount">29</p>
+                                    </td>
+                                  </tr>
+                                </table>-->
+            
+                              </div>
+                            </div>
+
+                  </div><!---Column 2-->
 
 
-                 </div><!---Column 2-->
+
+
 
               <!---Column 3-->
                 <div class="col-md-3 ">
-                    <div class="drottersroombox p-2 my-1 border bg-white">
+                    <div class="drottersroombox p-2 my-1 border border-white border-9 rounded  bg-white rounded">
                          <h4>DRotters news room</h4>
                          <hr>
                        <div class="roomdetails">
@@ -376,7 +453,65 @@
                              <div class="btn btn-primary adobebtn">Read More</div>
                         </div> 
                    </div>
-                    
+
+                <div> &nbsp;</div>
+
+                   <div class="drottersroombox py-2 my-1 border bg-white">
+                    <h4>DRotters with same spaciality</h4>
+                    <hr>
+                   <div class="roomdetails">
+                       <table>
+                             <tr>
+                               <td>
+                                    <img src="img/logo-color.png"></img>
+                               </td>
+                               <td>
+                                  <p class="roomdetailsp">I decided not to let cancer stop me dating</p>
+                               </td>
+                               <td>
+                                  <img src="img/blue-arrow.png"></img>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <img src="img/logo-color.png"></img>
+                               </td>
+                               <td>
+                                 <p class="roomdetailsp">I decided not to let cancer stop me dating</p>
+                               </td>
+                               <td>
+                                 <img src="img/blue-arrow.png"></img>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <img src="img/logo-color.png"></img>
+                               </td>
+                               <td>
+                                 <p class="roomdetailsp">I decided not to let cancer stop me dating</p>
+                               </td>
+                               <td>
+                                 <img src="img/blue-arrow.png"></img>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <img src="img/logo-color.png"></img>
+                               </td>
+                               <td>
+                                 <p class="roomdetailsp">I decided not to let cancer stop me dating</p>
+                               </td>
+                               <td>
+                                 <img src="img/blue-arrow.png"></img>
+                               </td>
+                             </tr>
+                       </table>
+                  </div>
+                 
+                   <div class="text-center btns">
+                        <div class="btn btn-primary adobebtn">Read More</div>
+                   </div> 
+              </div>
                 </div><!---Column 3-->
 
             </div>
@@ -775,11 +910,11 @@
   .hostbac {
     background-image: url('img/host_bac.png');
     background-repeat: no-repeat;
-
+    align-items: center;
   }
 
   .hostbac img {
-    width: 92px;
+   
     height: 86px;
     margin: 42px 77px;
   }

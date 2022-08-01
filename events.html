@@ -62,65 +62,571 @@
   <div class="wrapper">
     <!-- Header Area Start Here -->
     <header>
-
-      <div class="header2-area">
-        <div class="header-top-area" style="margin-bottom: 0px;"></div>
-        <div class="header-bottom-area" id="sticker">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="logo-area">
-                  <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"></a>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-light mx-auto py-0 my-0">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto nav-secondary">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light mx-auto my-0 py-0">
+        <div class="container">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="main-menu-area">
-                  <nav>
-                    <ul>
-                      <li><a href="index.html"><i class="fa fa-home"></i> Home</a>
-                      </li>
-                      <li><a href="experience.html"><i class="fa fa-hourglass-end"></i>
-                          Experience</a></li>
-                      <li><a href="DRotters.html"> <i class="fa fa-medkit" aria-hidden="true"></i>
-                          DRotters</a></li>
-                      <li><a href="academic.html"><i class="fa fa-book"></i> Academic</a></li>
-                      <li class="active"><a href="events.html"><i class="fa fa-book"></i> Events</a></li>
-                    </ul>
-                  </nav>
-                  <div class="p-1 bg-light rounded rounded-pill border border-secondary shadow-sm mb-4 mt-2">
-                    <div class="input-group">
-                      <input type="search" placeholder="Type to search experiences, DRotters etc."
-                        class="form-control border-0 bg-light shadow-none m-1">
-                      <div class="input-group-append">
-                        <button id="button-addon1" type="submit" onclick="window.location.href='search_results.html'"
-                          class="btn btn-link text-secondary m-1 shadow-none"><i class="fa fa-search"></i></button>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Destinations</a>
+                <div class="dropdown-menu shadow w-100 py-0">
+                  <div class="dropdown-container bg-secondary Destinations">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="Australia">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/australia.jpg" alt="Australia">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Australia</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="Asia">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/asia.jpg" alt="Asia">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Asia</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="Europe">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/europe.jpg" alt="Europe">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Europe</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="Africa" target="_blank">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/africa.jpg" alt="Africa">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Africa</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="North America">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/north_america.jpg" alt="North America">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">North America</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="destinations.html" class="no-underline menu-card-item" title="South America">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/destinations/sourth_america.jpg" alt="South America">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">South America</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <ul class="header-cart-area">
-                  <li>
-                    <div class="cart-area">
-                      <i class="fa fa-bars"></i> <img class="usericon" src="img/menuicn.png"></img>
-                      <ul>
-                        <li type="button" data-toggle="modal" data-target="#exampleModalLong">
-                          <a><i class="fa fa-sign-in"></i> Sign In</a>
-                        </li>
-                        <li type="button" data-toggle="modal" data-target="#exampleModalLong1">
-                          <a><i class="fa fa-sign-out"></i> Sign Up</a>
-                        </li>
-                      </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Experiences</a>
+                <div class="dropdown-menu shadow w-100 py-0">
+                  <div class="dropdown-container bg-secondary Destinations">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Experiences">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/nature.jpg" alt="Nature">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Nature</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Adventure">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/adventure.jpg" alt="Adventure">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Adventure</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Sports">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/sports.jpg" alt="Sports">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Sports</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Wild" target="_blank">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/wild.jpg" alt="Wild">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Wild</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Arts and culture">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/arts.jpg" alt="Arts and culture">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Arts and culture</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Food tasting">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/food.jpg" alt="Food tasting">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Food tasting</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Rare experiences">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/rare_experience.jpg" alt="Rare experiences">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Rare experiences</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="experience.html" class="no-underline menu-card-item" title="Educational experiences">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/experience/educational.jpg" alt="Educational experiences">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Educational experiences</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- check state condition end -->
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">DRotters</a>
+                <div class="dropdown-menu shadow w-100 py-0">
+                  <div class="dropdown-container bg-secondary Destinations">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="DRotters">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/dentist.jpg" alt="dentist">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Dentist</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="ENT">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded" src="img/menu/drotters/ent.jpg"
+                                  alt="ENT">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">ENT</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="General Physician">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/general_physician.jpg" alt="General Physician">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">General Physician</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="Gynocologist"
+                            target="_blank">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/gynocologist.jpg" alt="Gynocologist">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Gynocologist</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="Heart Specialist">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded" src="img/menu/drotters/heart.jpg"
+                                  alt="Heart Specialist">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Heart Specialist</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="Opthomologist">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/opthomologist.jpg" alt="Opthomologist">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Opthomologist</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="Orthopedist" class="no-underline menu-card-item" title="Rare experiences">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/orthopedics.jpg" alt="Orthopedist">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Orthopedist</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="DRotters.html" class="no-underline menu-card-item" title="Pediatrician">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/drotters/pediatrician.jpg" alt="Pediatrician">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Pediatrician</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- check state condition end -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Academic</a>
+                <div class="dropdown-menu shadow w-100 py-0">
+                  <div class="dropdown-container bg-secondary Destinations">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Conferences">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/conferences.jpg" alt="Conferences">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Conferences</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Medical Education">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/education.jpg" alt="Medical Education">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Medical Education</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Medical Practice">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/practice.jpg" alt="Medical Practice">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Medical Practice</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Medical Speach"
+                            target="_blank">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/speach.jpg" alt="Medical Speach">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Medical Speach</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Specialization">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/specialization.jpg" alt="Specialization">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Specialization</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Trainings">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/academic/trainings.jpg" alt="Trainings">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Trainings</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- check state condition end -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">Events</a>
+                <div class="dropdown-menu shadow w-100 py-0">
+                  <div class="dropdown-container bg-secondary Destinations">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="events.html" class="no-underline menu-card-item" title="Lifestyle Medicine">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/lifestyle_medicine.jpg" alt="Lifestyle Medicine">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Lifestyle Medicine (08 August)</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="events.html" class="no-underline menu-card-item" title="World Congress for Medical Law">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/congress.jpg" alt="World Congress for Medical Law">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">World Congress for Medical Law (10 Aug)</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="events.html" class="no-underline menu-card-item" title="Mental Health">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/mental_health.jpg" alt="Mental Health Services Conference">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Mental Health Services Conference (15 Aug)</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="events.html" class="no-underline menu-card-item" title="iDEA 2022 Conference: Time to Act"
+                            target="_blank">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/idea.jpg" alt="iDEA 2022 Conference: Time to Act">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">iDEA 2022 Conference: Time to Act</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="academic.html" class="no-underline menu-card-item" title="Queensland Mining Industry Health & Safety Conference 2022">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/queensland.jpg" alt="Queensland Mining Industry Health & Safety Conference 2022">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Queensland Mining Industry Health & Safety Conference 2022</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-5">
+                          <a href="events.html" class="no-underline menu-card-item" title="Annual Obstetric Malpractice Conference">
+                            <div class="card-default menu-card border-0">
+                              <div class="cust-width-ratio width-ratio-no-shadow ratio16-9">
+                                <img class="card-image image-top contenido lazyloaded"
+                                  src="img/menu/events/obstetric.jpg" alt="Annual Obstetric Malpractice Conference">
+                              </div>
+                              <div class="card-body">
+                                <span class="card-text">Annual Obstetric Malpractice Conference</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- check state condition end -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <form class="d-flex">
+              <div class="input-group">
+                <input class="form-control border-end-0 border rounded-pill" type="search" value="search"
+                  id="example-search-input">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill search-icon"
+                    type="button" onclick="javascript:window.location='search_results.html'">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
               </div>
-            </div>
-
+            </form>
           </div>
         </div>
-      </div>
+      </nav>
       <!-- Mobile Menu Area Start -->
       <div class="mobile-menu-area">
         <div class="container">

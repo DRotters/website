@@ -1246,7 +1246,7 @@ ul {
 
 .main-menu-area nav ul {
   margin-top: 7px;
-  text-align: center;
+  /*! text-align: center; */
 }
 
 .main-menu-area nav ul .active>a {
@@ -1257,6 +1257,7 @@ ul {
 .main-menu-area nav ul li {
   display: inline-block;
   position: relative;
+  padding-right: 58px;
 }
 
 .main-menu-area nav ul li a {
@@ -1297,17 +1298,37 @@ ul {
   transform: scaleY(0);
   transform-origin: 0 0 0;
   transition: all 0.5s ease 0s;
-  width: 180px;
+
+}
+
+#menumainbox {
+  width: 900px;
   z-index: 99999;
-  background: #e7272d;
+  background: #17406c;
   padding: 0;
   left: 0;
+  height: 500px;
+  overflow-x: hidden;
+  position: absolute;
+  padding-bottom: 23px;
+}
+
+.homemenuli:hover+#menumainbox {
+  display: block;
+  visibility: visible
 }
 
 .main-menu-area nav ul li ul>li {
   padding: 0;
   display: block;
-  border-bottom: 1px solid #d32f2f;
+
+}
+
+.mainsubheading {
+  color: #fff;
+  padding: 2px 3px 13px 31px;
+  margin-bottom: 0;
+  font-size: 17px;
 }
 
 .main-menu-area nav ul li ul>li>a {
@@ -1321,7 +1342,7 @@ ul {
 }
 
 .main-menu-area nav ul li ul>li:hover {
-  background: #d32f2f;
+  background: #17406c;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -9093,6 +9114,111 @@ ul {
   right: 30px;
 }
 
+.open-button {
+
+  position: fixed;
+  right: 10px;
+  top: 55%;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  border: 1px solid;
+  box-shadow: 1px;
+  background: white;
+
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  width: 377px;
+  border: 0px solid #f1f1f1;
+  z-index: 9;
+}
+
+.chatbox-header {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 16px;
+  color: #fff;
+  background-color: #0360a5;
+  align-items: center;
+  justify-content: space-around;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+
+}
+
+.chatbox-footer {
+
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  padding: 1px;
+  border-top: 1px solid #ddd;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 5px;
+  /**/
+  background-color: rgba(255, 255, 255, 0.99);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 100px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #042eaa;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgba(255, 0, 0, 0.586);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
 .connect-icon {
   position: absolute;
   font-size: x-large;
@@ -9202,7 +9328,7 @@ ul {
 .welcome {
   position: absolute;
   bottom: 50%;
-  color: gold;
+  color: white;
 }
 
 .welcome h2 {
@@ -9267,6 +9393,266 @@ ul {
   display: block;
 }
 
+#sidebar {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background: #f8f8f8;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+.media-object {
+  max-width: 250px;
+}
+
+.sidebar-header {
+  background: #333333;
+  color: white;
+  padding: 0px 10px;
+}
+
+.sidebar-content {
+  padding: 10px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 998;
+  /* animate the transition */
+}
+
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.btn-sidebar {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 10;
+  border: 1px solid;
+  box-shadow: 1px;
+  background: white;
+}
+
+.well img {
+  border: 1px solid #646262;
+  padding: 5px;
+  border-color: #646262;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.filter-area {
+  border: 1px solid #e3e3e3;
+  padding-right: -calc(var(--bs-gutter-x) * .5);
+  padding-left: -calc(var(--bs-gutter-x) * .5);
+}
+
+.map-trigger i {
+  font-size: x-large;
+}
+
+.search-result .card-default {
+  height: 100%;
+}
+
+.box-shadow-light {
+  box-shadow: 0 0 17px 0 rgb(0 0 0 / 8%);
+}
+
+.homemenu {
+  padding: 42px 8px 2px 12px;
+}
+
+.experiencemenu {
+  padding: 42px 8px 2px 12px;
+}
+
+.drottersmenu {
+  padding: 42px 8px 2px 12px;
+}
+
+.menucap h3 {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 14px 0px 0px 0px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.imgcarddesign {
+  background: #265b93;
+  padding: 8px;
+  margin-bottom: 32px;
+  ``
+}
+
+.imgcarddesign:hover {
+  box-shadow: 0 2px 30px 0 rgba(16, 43, 74, 0.94);
+}
+
+.menuimg {
+  margin-top: -20px;
+}
+
+.locbox img {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.locbox h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.locboxlista {
+  font-size: 12px !important;
+  line-height: 13px !important;
+  margin-bottom: 16px;
+  padding: 3px 2px !important;
+  color: #fff;
+  text-align: center;
+}
+
+.locboxlista:hover {
+  text-decoration: underline;
+}
+
+.dropdown-megamenu>.dropdown-container {
+  position: absolute;
+  top: 89%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  padding: 15px;
+  border: 0;
+  height: auto;
+  overflow-y: scroll;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);
+  overflow-x: hidden;
+  background: #17406c
+}
+
+.dropdown-megamenu>.dropdown-container.show {
+  display: block
+}
+
+.dropdown-megamenu .dropdown-menu {
+  display: block
+}
+
+.menu-card-item:first-child {
+  padding-top: 45px;
+}
+
+.menu-card-item {
+  padding-top: 60px;
+  display: block;
+  height: 100%;
+}
+
+.dropdown-container .menu-card {
+  box-shadow: 0 2px 30px 0 rgb(16 43 74 / 94%);
+}
+
+.menu-card {
+  padding: 15px 15px 5px 15px;
+  border-radius: inherit;
+  background: #265b93 !important;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.card-default:not(.no-shadow) {
+  background: #fff;
+}
+
+.card-default:not(.no-shadow) {
+  box-shadow: 0 2px 17px 0 rgb(0 0 0 / 8%);
+}
+
+.menu-card .cust-width-ratio {
+  margin-top: -45px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.menu-card.card-default .card-image {
+  box-shadow: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 2px;
+}
+
+.navbar-brand img {
+  max-width: 104px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.search-icon {
+  margin-left: -40px;
+}
+
+.menu-card-item .card-text {
+  color: white;
+  font-weight: bold;
+}
+
+#navbar-content a {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.card-text-small {
+  font-size: x-small;
+}
+
+.nav-secondary .nav-link {
+  font-size: smaller;
+}
+
+.chatbox-footer button[type=submit] {
+  border: none;
+  background: none;
+}
+
+/* copied from home page */
 #exampleModalLong {
   z-index: 9999;
   background: #8080807d;
@@ -9334,6 +9720,8 @@ img.work {
   background: none;
 }
 
+
+
 .wrap {
   position: relative;
   width: 100%;
@@ -9389,6 +9777,8 @@ img.work {
   right: -50px;
   text-align: right;
 }
+
+
 
 .item.slick-slide {
   width: 400px;
@@ -9511,224 +9901,18 @@ img.work {
   color: #646262;
 }
 
-#sidebar {
-  min-width: 50vw;
-  max-width: 50vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  background: #f8f8f8;
-  border: 1px solid;
-}
-
-.media-object {
-  max-width: 250px;
-}
-
-.sidebar-header {
-  background: #333333;
-  color: white;
-  padding: 0px 10px;
-}
-
-.sidebar-content {
-  padding: 10px;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  /* full screen */
-  width: 100vw;
-  height: 100vh;
-  /* transparent black */
-  background: rgba(0, 0, 0, 0.7);
-  /* middle layer, i.e. appears below the sidebar */
-  z-index: 998;
-  /* animate the transition */
-}
-
-/* display .overlay when it has the .active class */
-.overlay.active {
-  display: block;
-  opacity: 1;
-}
-
-#dismiss {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  /* top right corner of the sidebar */
-  top: 10px;
-  right: 10px;
-  color: white;
-}
-
-.btn-sidebar {
-  position: fixed;
-  right: 10px;
-  top: 50%;
-  z-index: 10;
-  border: 1px solid;
-  box-shadow: 1px;
-  background: white;
-}
-
-.well img {
-  border: 1px solid #646262;
-  padding: 5px;
-  border-color: #646262;
-  margin-right: 5px;
-  border-radius: 5px;
-}
-
-.filter-area,
-.result-area {
-  border: 1px solid #e3e3e3;
-  padding-right: -calc(var(--bs-gutter-x) * .5);
-  padding-left: -calc(var(--bs-gutter-x) * .5);
-}
-
-.result-area {
-  border-left: none;
-}
-
-.filter-area hr {
-  padding: 0 !important;
-}
-
-.map-trigger i {
-  font-size: x-large;
-}
-
-.search-result .card-default {
-  height: 100%;
-}
-
-.box-shadow-light {
-  box-shadow: 0 0 17px 0 rgb(0 0 0 / 8%);
-}
-
-.form-control:focus {
-  box-shadow: none;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/*  Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  position: fixed;
-  right: 10px;
-  top: 45%;
-  height: 40px;
-  width: 40px;
-  z-index: 10;
-  border: 1px solid;
-  box-shadow: 1px;
-  background: white;
-}
-
-/* The popup chat - hidden by default */
-.chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  width: 377px;
-  border: 0px solid #f1f1f1;
-  z-index: 9;
-}
-
-.chatbox-header {
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  height: 80px;
-  padding: 16px;
+.megamenu {
+  background: blue;
+  z-index: 999999;
   color: #fff;
-  background-color: #0360a5;
-  align-items: center;
-  justify-content: space-around;
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-
+  position: relative;
 }
 
-.chatbox-footer {
-
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  height: 40%;
-  padding: 1px;
-  border-top: 1px solid #ddd;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+.hideMenu {
+  display: none;
 }
 
-.chatbox-footer button {
-  border: none;
-  background: no-repeat
+.showMenu {
+  display: block;
 }
-
-.chatbox-footer button i {
-  font-size: 1.5rem;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 100%;
-  padding: 5px;
-  /**/
-  background-color: rgba(255, 255, 255, 0.99);
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-
-}
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 22px 0;
-  border: 1px solid;
-  resize: none;
-  min-height: 100px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/send button */
-.form-container .btn {
-  background-color: #042eaa;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover,
-.open-button:hover {
-  opacity: 1;
-}
-.stick .img-responsive{
-  max-width: 110px;
-}
+/* end copied from home page */
